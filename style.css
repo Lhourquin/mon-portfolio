@@ -388,21 +388,28 @@ nav {
   width: 60%;
   padding-top: 1.4rem;
 }
+.nav__ul__li__a{
+  position: relative;
+}
 .nav__ul__li__a:visited {
   color: #95eaef;
 }
-.nav__ul__li__a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: #ffff00;
-  transition: width 0.3s;
+.nav__ul__li__a::before{
+  content: '';
   position: absolute;
-  display: flex;
-}
-.nav__ul__li__a:hover::after {
   width: 100%;
-  transition: width 0.3s;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffff00;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.nav__ul__li__a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1)
 }
 .LH-TAG-desktop,
 .LH-TAG-mobile,
