@@ -366,19 +366,26 @@ a {
 /* custom
 
 */
+body {
+  background-color: #282c34;
+  color: whitesmoke;
+}
 
 header {
   height: 100vh;
 }
 nav {
   display: flex;
-  background-color: #282c34;
+  background-color: #282c34e8;
   color: #95eaef;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0;
   height: 89px;
+  -webkit-box-shadow: 1px 0px 17px 2px rgba(49, 50, 52, 0.82);
+  box-shadow: 1px 0px 17px 2px rgba(49, 50, 52, 0.82);
+  z-index: 1;
 }
 .nav__ul {
   color: #95eaef;
@@ -388,14 +395,14 @@ nav {
   width: 60%;
   padding-top: 1.4rem;
 }
-.nav__ul__li__a{
+.nav__ul__li__a {
   position: relative;
 }
 .nav__ul__li__a:visited {
   color: #95eaef;
 }
-.nav__ul__li__a::before{
-  content: '';
+.nav__ul__li__a::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 4px;
@@ -405,11 +412,11 @@ nav {
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .nav__ul__li__a:hover::before {
   transform-origin: left;
-  transform: scaleX(1)
+  transform: scaleX(1);
 }
 .LH-TAG-desktop,
 .LH-TAG-mobile,
@@ -439,6 +446,127 @@ nav {
   }
 }
 
+#home {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+.left-section {
+  background-color: red;
+  grid-area: 1 / 1 / 9 / 7;
+}
+.right-section {
+  background-color: #95eaef;
+  grid-area: 1 / 7 / 9 / 13;
+}
+.container__photo-network {
+  grid-area: 3 / 9 / 6 / 11;
+}
+.container {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  animation: rotate 40s linear infinite;
+  /*animation-play-state:paused;*/
+  right: 191px;
+  top: 250px;
+  width: 500px;
+}
+
+.container:hover {
+  animation-play-state: paused;
+}
+
+.container:hover .photo {
+  animation-play-state: paused;
+}
+
+.container:hover .network .network-icons {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.network {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  transition: 550ms ease;
+}
+
+.network-icons {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: #282c34;
+  color: white;
+  aspect-ratio: 1;
+  left: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  transition: background 350ms ease, color 350ms ease-in-out;
+  animation: rotate-opposite 40s linear infinite;
+}
+
+.network-icons:hover {
+  background-color: coral;
+  color: white;
+}
+
+.photo {
+  width: 250px;
+  height: 250px;
+  animation: rotate-opposite 40s linear infinite;
+  border-radius: 100vw;
+  outline: 4px solid hsl(120, 70%, 60%);
+  outline-offset: 8px;
+  z-index: 1;
+  --start-angle-of-rotation: 0deg;
+  --end-angle-of-rotation: -360deg;
+  background-image: url(./img/photo-de-cv.jpg);
+  background-size: cover;
+}
+
+@keyframes rotate-opposite {
+  from {
+    transform: rotate(var(--start-angle-of-rotation));
+  }
+  to {
+    transform: rotate(var(--end-angle-of-rotation));
+  }
+}
+
+
+.prenom-metier {
+  background-color: green;
+  grid-area: 3 / 3 / 5 / 5;
+  text-align: center;
+}
+.btn-cta {
+  background-color: palegreen;
+  grid-area: 5 / 3 / 6 / 5;
+}
+.network-icons {
+  height: 65px;
+  width: 65px;
+}
+
 @media (max-width: 650px) {
   .LH-TAG-desktop {
     display: none;
@@ -449,20 +577,19 @@ nav {
   .nav__ul {
     margin-left: 100px;
     overflow-x: auto;
-    white-space: nowrap; 
-    -webkit-overflow-scrolling: touch; 
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    
   }
-  .nav__ul__li{
+  .nav__ul__li {
     margin-left: 16px;
   }
-  .nav__ul__li:nth-child(1){
-    
+  .nav__ul__li:nth-child(1) {
     padding-left: 55px;
   }
-  .nav__ul__li:nth-child(4){
-    
+  .nav__ul__li:nth-child(4) {
     padding-right: 20px;
   }
 }
+
+/*effect*/
