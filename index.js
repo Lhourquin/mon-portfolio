@@ -1,5 +1,5 @@
 console.clear();
-let angle = 360/6;
+let angle = 360/4;
 let finalAngle = -360;
 
 const circleContainer = document.querySelectorAll(".network");

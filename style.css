@@ -507,26 +507,29 @@ nav {
   pointer-events: none;
   transition: 550ms ease;
 }
-
+@keyframes rot {
+  0% { transform:  rotate(0deg); }
+  0% { transform:  rotate(-200deg); }
+}
 .network-icons {
+  transition: .2s;
   position: absolute;
   width: 65px;
   height: 65px;
-  border-radius: 100%;
-  background-color: #282c34;
   color: white;
-  aspect-ratio: 1;
   left: 0;
   display: grid;
   place-items: center;
-  pointer-events: auto;
-  transition: background 350ms ease, color 350ms ease-in-out;
-  animation: rotate-opposite 40s linear infinite;
+  pointer-events: auto; transition: background 350ms ease, color 350ms ease-in-out;
+  animation: rotate-opposite linear 40s infinite;
+ 
 }
 
 .network-icons:hover {
-  background-color: coral;
+  transition: .2s;
   color: white;
+  height: 75px;
+  width: 75px;
 }
 
 .photo {
@@ -545,10 +548,14 @@ nav {
 
 @keyframes rotate-opposite {
   from {
-    transform: rotate(var(--start-angle-of-rotation));
+    transform: rotate(var(--start-angle-of-rotation) );
+    transition: .2s;
+
   }
   to {
     transform: rotate(var(--end-angle-of-rotation));
+    transition: .2s;
+
   }
 }
 
@@ -562,10 +569,7 @@ nav {
   background-color: palegreen;
   grid-area: 5 / 3 / 6 / 5;
 }
-.network-icons {
-  height: 65px;
-  width: 65px;
-}
+
 
 @media (max-width: 650px) {
   .LH-TAG-desktop {
