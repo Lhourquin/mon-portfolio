@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>Lucas Hourquin</title>
   </head>
-  <body>
-    <header>
+  <body id="top">
+    <header >
       <nav class="header__nav">
         <div class="container-logo">
           <img class="big-bang rotate" src="./img/big-bang.svg" alt="logo" />
@@ -21,7 +21,7 @@
         </div>
         <ul class="header__nav__ul">
           <li class="header__nav__ul__li">
-            <a class="header__nav__ul__li__a" href="#home">Hello World</a>
+            <a class="header__nav__ul__li__a" href="#top">Hello World</a>
           </li>
           <li class="header__nav__ul__li">
             <a class="header__nav__ul__li__a" href="#about">A propos</a>
@@ -37,12 +37,12 @@
       <section id="home">
         <div class="home__div__name-work--btnAbout-btnProject">
           <div class="name--work">
-            <h1>Lucas Hourquin</h1>
-            <h2>Développeur Web</h2>
+            <h1 class="h1-name">Lucas <span class="lastname">Hourquin</span></h1>
+            <h2 class="h2-work">Développeur Web</h2>
           </div>
           <div class="btnAbout--btnProject">
-            <button>A propos</button>
-            <button>Réalisation</button>
+            <button class="btnAbout" >A propos</button>
+            <button class="btnProject" >Réalisation</button>
           </div>
         </div>
         <div class="home__div__photo-network">
@@ -52,26 +52,26 @@
             class="network"
             target="”_blank”"
             href="https://github.com/Lhourquin"
-            ><img class="network-icons" src="./img/github-brands.svg"
-          /></a>
+            ><div class="network-icons github" 
+          ></div></a>
           <a
             class="network"
             target="”_blank”"
             href="https://www.instagram.com/arobazabdelrahman/?hl=fr"
-            ><img class="network-icons"" src="./img/instagram-brands.svg"/></a
-          >
+            ><div class="network-icons insta" 
+            ></div>
           <a
             class="network"
             target="”_blank”"
             href="https://www.linkedin.com/in/lucas-hourquin-128969184/"
-            ><img class="network-icons" src="./img/linkedin-brands.svg"
-          /></a>
+            ><div class="network-icons linkedin" 
+            ></div></a>
           <a
             class="network"
             target="”_blank”"
-            href="https://www.xtwitter.com/LHourquin"
-            ><img class="network-icons" src="./img/twitter-brands.svg"
-          /></a>
+            href="https://www.twitter.com/LHourquin"
+            ><div class="network-icons twitter" 
+            ></div></a>
         </div>
 
         <!--  <div>

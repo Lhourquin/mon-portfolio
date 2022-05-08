@@ -204,6 +204,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  cursor: pointer;
 }
 
 /**
@@ -451,12 +452,10 @@ header {
 
 /* home section */
 #home {
-  background-color: #ffff00;
   height: 100vh;
   display: flex;
 }
 .home__div__name-work--btnAbout-btnProject {
-  background-color: #95eaef;
   width: 50%;
   height: 100%;
   display: flex;
@@ -464,8 +463,46 @@ header {
   justify-content: center;
   text-align: center;
 }
+.h1-name {
+  font-size: 3em;
+  color: #61dafb;
+  letter-spacing: 2px;
+}
+.lastname {
+  color: #43a0b9;
+}
+.h2-work {
+  font-size: 2rem;
+  color: #ffff00;
+  letter-spacing: 1px;
+}
+.btnAbout,
+.btnProject{
+  transition: .3s;
+  height: 50px;
+  width: 150px;
+  font-size: 22px;
+  color: #282c34;
+  border: none;
+  margin: 7px;
+  border-radius: 9px;
+}
+.btnAbout{
+  background-color: #61dafb;
+}
+.btnProject{
+  background-color: #ffff00;
+}
+.btnAbout:hover,
+.btnProject:hover{
+  transition: .3s;
+
+  -webkit-box-shadow: 1px 0px 17px 2px rgba(183, 186, 192, 0.265);
+  box-shadow: 1px 0px 17px 2px rgba(183, 186, 192, 0.265);
+  
+}
 .home__div__photo-network {
- /* position: absolute;
+  /* position: absolute;
   display: grid;
   place-items: center;
   pointer-events: none;
@@ -518,10 +555,10 @@ header {
 .network-icons {
   transition: 0.2s;
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   color: white;
-  left: 150px;
+  left: 190px;
   display: grid;
   place-items: center;
   pointer-events: auto;
@@ -532,16 +569,57 @@ header {
 .network-icons:hover {
   transition: 0.2s;
   color: white;
-  height: 75px;
-  width: 75px;
+  height: 58px;
+  width: 58px;
+  -webkit-box-shadow: 1px 0px 17px 2px rgba(183, 186, 192, 0.265);
+  box-shadow: 1px 0px 17px 2px rgba(183, 186, 192, 0.265);
+}
+.github {
+  display: inline-block;
+  background-color: #61dafb;
+  -webkit-mask: url(./img/github-brands.svg) no-repeat 50% 50%;
+  mask: url(./img/github-brands.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.twitter {
+  display: inline-block;
+  background-color: #61dafb;
+  -webkit-mask: url(./img/twitter-brands.svg) no-repeat 50% 50%;
+  mask: url(./img/twitter-brands.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.insta {
+  display: inline-block;
+  background-color: #61dafb;
+  -webkit-mask: url(./img/instagram-brands.svg) no-repeat 50% 50%;
+  mask: url(./img/instagram-brands.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.linkedin {
+  display: inline-block;
+  background-color: #61dafb;
+  -webkit-mask: url(./img/linkedin-brands.svg) no-repeat 50% 50%;
+  mask: url(./img/linkedin-brands.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.github:hover,
+.insta:hover,
+.twitter:hover,
+.linkedin:hover {
+  background-color: #ffff00;
 }
 
 .photo {
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   animation: rotate-opposite 40s linear infinite;
   border-radius: 100vw;
-  outline: 4px solid hsl(120, 70%, 60%);
+  outline: 4px solid #ffff00;
   outline-offset: 8px;
   --start-angle-of-rotation: 0deg;
   --end-angle-of-rotation: -360deg;
@@ -559,15 +637,29 @@ header {
     transition: 0.2s;
   }
 }
+@media (max-width : 990px){
+ .photo{
+  width: 210px;
+  height: 210px;
+ }
+ .network-icons{
+  width: 43px;
+  height: 43px;
+  left: 139px;
+ }
+ .h1-name{
+   font-size: 2.5em;
+ }
+ .h2-work{
+   font-size:1.5rem;
+ }
+ .btnAbout,
+ .btnProject{
+   height: 45px;
+   width: 135px;
 
-.prenom-metier {
-  background-color: green;
-  grid-area: 3 / 3 / 5 / 5;
-  text-align: center;
-}
-.btn-cta {
-  background-color: palegreen;
-  grid-area: 5 / 3 / 6 / 5;
+ }
+
 }
 
 @media (max-width: 650px) {
@@ -593,6 +685,43 @@ header {
   .header__nav__ul__li:nth-child(4) {
     padding-right: 20px;
   }
+  #home{
+    flex-direction: column-reverse;
+    margin-top: 155px;
+  }
+  .home__div__name-work--btnAbout-btnProject,
+  .home__div__photo-network{
+    width: 100%;
+  }
+  .h1-name{
+    font-size: 2.2em;
+  }
+  .h2-work{
+    font-size: 1.2rem;
+  }
+  .home__div__name-work--btnAbout-btnProject{
+    margin-top: -180px;
+  }
+  .photo{
+    height: 156px;
+    width: 156px;
+  }
+  .network-icons{
+    height: 35px;
+    width: 35px;
+    left : 126px;
+  }
+  .network-icons:hover{
+    height: 43px;
+    width: 43px;
+  }
+  .btnAbout,
+  .btnProject{
+    height: 35px;
+    width: 124px;
+    font-size: 19px;
+  }
+
 }
 
 /*effect*/
