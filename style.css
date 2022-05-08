@@ -361,17 +361,6 @@ template {
   display: none;
 }
 
-/**
-    * remove style by default link
-    */
-
-a {
-  text-decoration: none;
-}
-
-/* custom
-
-*/
 body {
   background-color: #282c34;
   color: whitesmoke;
@@ -569,20 +558,9 @@ header {
   box-shadow: 1px 0px 17px 2px rgba(183, 186, 192, 0.265);
 }
 .home__div__photo-network {
-  /* position: absolute;
-  display: grid;
   place-items: center;
   pointer-events: none;
   animation: rotate 40s linear infinite;
-  /*animation-play-state:paused;*/
-  /*right: 150px;
-  top: 250px;
-  width: 500px;*/
-
-  place-items: center;
-  pointer-events: none;
-  animation: rotate 40s linear infinite;
-  /* animation-play-state: paused; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -704,6 +682,46 @@ header {
     transition: 0.2s;
   }
 }
+
+/**** about ****/
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about__container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.h3-about {
+  text-align: center;
+  font-size: 40px;
+}
+.about__container__logo--presentation {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.about__container__logo {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.about__container__logo__img-bigbang,
+.about__container__logo__img-LH {
+  position: absolute;
+}
+.about__container__logo__img-LH{
+  position: relative;
+  left: 10px;
+}
+.about-container__p-presentation {
+  width: 600px;
+  font-size:25px;
+}
+
 @media (max-width: 990px) {
   .photo {
     width: 210px;
@@ -787,5 +805,3 @@ header {
     font-size: 19px;
   }
 }
-
-/*effect*/
