@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
     <title>Lucas Hourquin</title>
   </head>
@@ -11,13 +13,16 @@
     <header >
       <nav class="header__nav">
         <div class="container-logo">
-          <img class="big-bang rotate" src="./img/big-bang.svg" alt="logo" />
-          <img
-            class="LH-TAG-desktop"
-            src="./img/LH-TAG-DESKTOP.svg"
-            alt="logo"
-          />
-          <img class="LH-TAG-mobile" src="./img/LH-TAG-MOBILE.svg" alt="logo" />
+          <a href="#top">
+            <img class="big-bang rotate" src="./img/big-bang.svg" alt="logo" />
+            <img
+              class="LH-TAG-desktop"
+              src="./img/LH-TAG-DESKTOP.svg"
+              alt="logo"
+            />
+            <img class="LH-TAG-mobile" src="./img/LH-TAG-MOBILE.svg" alt="logo" />
+          </a>
+          
         </div>
         <ul class="header__nav__ul">
           <li class="header__nav__ul__li">
@@ -35,18 +40,18 @@
         </ul>
       </nav>
       <section id="home">
-        <div class="home__div__name-work--btnAbout-btnProject">
+        <div class="home__div__name-work--btnAbout-btnProject" data-aos="fade-right">
           <div class="name--work">
             <h1 class="h1-name">Lucas <span class="lastname">Hourquin</span></h1>
             <h2 class="h2-work">Développeur Web</h2>
           </div>
           <div class="btnAbout--btnProject">
-            <button class="btnAbout" >A propos</button>
-            <button class="btnProject" >Réalisation</button>
+            <button class="btnAbout" ><a href="#about">A propos</a></button>
+            <button class="btnProject" ><a href="#project">Réalisation</a></button>
           </div>
         </div>
         <div class="home__div__photo-network">
-          <div class="photo"></div>
+          <div class="photo" data-aos="zoom-in"></div>
 
           <a
             class="network"
@@ -88,6 +93,14 @@
             <li>REACT</li>
           </ul>
         </div>-->
+        <a href="#about">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+      
       </section>
       <div>Fleche</div>
     </header>
@@ -130,5 +143,9 @@
       </section>
     </main>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
