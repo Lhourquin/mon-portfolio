@@ -376,8 +376,23 @@ body {
   bottom: 20px;
   cursor: pointer;
 }
+.arrows-project {
+  width: 60px;
+  height: 72px;
+  position: relative;
+  left: 50%;
+  margin-left: -30px;
+  cursor: pointer;
+}
 
 .arrows path {
+  stroke: #95eaef;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+.arrows-project path {
   stroke: #95eaef;
   fill: transparent;
   stroke-width: 1px;
@@ -415,17 +430,22 @@ body {
   }
 }
 
-.arrows path.a1 {
+.arrows,
+.arrows-project,
+path.a1 {
   animation-delay: -1s;
   -webkit-animation-delay: -1s; /* Safari 和 Chrome */
 }
 
-.arrows path.a2 {
+.arrows,
+.arrows-project,
+path.a2 {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {
+.arrows,
+.arrows-project path.a3 {
   animation-delay: 0s;
   -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
@@ -696,6 +716,8 @@ header {
   flex-direction: column;
 }
 .h3-about {
+  color: #61dafb;
+
   text-align: center;
   font-size: 40px;
 }
@@ -713,16 +735,30 @@ header {
 .about__container__logo__img-LH {
   position: absolute;
 }
-.about__container__logo__img-LH{
+.about__container__logo__img-LH {
   position: relative;
   left: 10px;
+  top: -10px;
 }
 .about-container__p-presentation {
   width: 600px;
-  font-size:25px;
+  font-size: 25px;
+}
+.pro-student {
+  color: #61dafb;
+}
+.ZPD {
+  color: #43a0b9;
+}
+.react {
+  color: #61dafb;
+}
+.JS {
+  color: #ffff00;
 }
 
 @media (max-width: 990px) {
+  /** home **/
   .photo {
     width: 210px;
     height: 210px;
@@ -743,9 +779,26 @@ header {
     height: 45px;
     width: 135px;
   }
+  /** about **/
+  .about-container__p-presentation {
+    width: 400px;
+    font-size: 22px;
+  }
+  .about__container__logo__img-bigbang,
+  .about__container__logo__img-LH {
+    height: 350px;
+  }
+  .about__container__logo__img-LH {
+    left: 6px;
+    top: 0px;
+  }
+  .h3-about {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 650px) {
+  /**home**/
   .LH-TAG-desktop {
     display: none;
   }
@@ -804,4 +857,25 @@ header {
     width: 124px;
     font-size: 19px;
   }
+    /** about **/
+    #about{
+      justify-content: space-evenly;
+    }
+    .about__container__logo--presentation{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .about__container__logo{
+      text-align: center;
+      width: 100%;
+    }
+    .about__container__logo__img-bigbang,
+    .about__container__logo__img-LH{
+      height: 115px;
+    }
+    .about-container__p-presentation{
+      font-size: 18px;
+      width: 80%;
+      margin: auto;
+    }
 }
