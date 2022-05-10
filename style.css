@@ -740,9 +740,112 @@ header {
   left: 10px;
   top: -10px;
 }
+.slide-out-fwd-center {
+  transition: 0.3s;
+  position: absolute;
+  -webkit-animation: slide-out-fwd-center 3s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  animation: slide-out-fwd-center 3s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    infinite;
+}
+.about__container__logo-annimation {
+  width: 30%;
+}
+.consoleLog {
+  position: absolute;
+  top: 60px;
+  left: 290px;
+}
+.onClick {
+  position: absolute;
+  top: 80px;
+  left: 390px;
+}
+.binary00101 {
+  position: absolute;
+  top: 180px;
+  right: 150px;
+}
+.class {
+  position: absolute;
+  top: 170px;
+  left: 200px;
+}
+.map {
+  position: absolute;
+  top: 310px;
+  left: 270px;
+}
+.render {
+  position: absolute;
+  top: 280px;
+  left: 500px;
+}
+.while {
+  position: absolute;
+  top: 230px;
+  left: 190px;
+}
+.binary01001 {
+  position: absolute;
+  top: 340px;
+  left: 370px;
+}
+/**
+ * ----------------------------------------
+ * animation slide-out-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+
+  from {
+    font-size: 0px;
+    color: #282c34;
+  }
+  to {
+    font-size: 15px;
+    color: whitesmoke;
+  }
+}
+@keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  from {
+    font-size: 0px;
+    color: #282c34;
+  }
+  to {
+    font-size: 13px;
+    color: whitesmoke;
+  }
+}
+.displayNoneAnnimation {
+  transition: 0.2s;
+  opacity: 0;
+}
+
 .about-container__p-presentation {
   width: 600px;
   font-size: 25px;
+  align-self: center;
 }
 .pro-student {
   color: #61dafb;
@@ -794,6 +897,43 @@ header {
   }
   .h3-about {
     font-size: 30px;
+  }
+  /****** annimation logo ******/
+  .consoleLog {
+    top: 45px;
+    left: 190px;
+  }
+  .onClick {
+    top: 80px;
+    left: 269px;
+  }
+  .binary00101 {
+    top: 256px;
+    left: 170px;
+  }
+  .class {
+    top: 256px;
+    left: 170px;
+  }
+  .map {
+    top: 233px;
+    left: 125px;
+  }
+  .render {
+    top: 224px;
+    left: 279px;
+  }
+  .while {
+    top: 86px;
+    left: 127px;
+  }
+  .binary01001 {
+    top: 141px;
+    left: 326px;
+  }
+  .binary00101 {
+    top: 60px;
+    left: 190px;
   }
 }
 
@@ -857,25 +997,25 @@ header {
     width: 124px;
     font-size: 19px;
   }
-    /** about **/
-    #about{
-      justify-content: space-evenly;
-    }
-    .about__container__logo--presentation{
-      flex-direction: column;
-      justify-content: center;
-    }
-    .about__container__logo{
-      text-align: center;
-      width: 100%;
-    }
-    .about__container__logo__img-bigbang,
-    .about__container__logo__img-LH{
-      height: 115px;
-    }
-    .about-container__p-presentation{
-      font-size: 18px;
-      width: 80%;
-      margin: auto;
-    }
+  /** about **/
+  #about {
+    justify-content: space-evenly;
+  }
+  .about__container__logo--presentation {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__container__logo {
+    text-align: center;
+    width: 100%;
+  }
+  .about__container__logo__img-bigbang,
+  .about__container__logo__img-LH {
+    height: 115px;
+  }
+  .about-container__p-presentation {
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+  }
 }
