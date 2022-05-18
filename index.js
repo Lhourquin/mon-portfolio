@@ -56,18 +56,18 @@ setInterval(() => {
 
 const explanationOfProjects = [
   {
-    name : "React Prayer Times",
-    text : "le projet react"
+    name: "React Prayer Times",
+    text: "le projet react"
   },
   {
-    name : "Advice Geneartor App",
-    text : "le projet frontendmentor advice generator app"
+    name: "Advice Geneartor App",
+    text: "le projet frontendmentor advice generator app"
 
 
   },
   {
-    name : "Interactive Rating Component",
-    text : "le projet frontendmentor interactive rating component"
+    name: "Interactive Rating Component",
+    text: "le projet frontendmentor interactive rating component"
 
 
   },
@@ -75,41 +75,55 @@ const explanationOfProjects = [
 const btnInfosOfCardsProject = document.getElementsByClassName("project__container__card__btn-infos");
 console.log(btnInfosOfCardsProject)
 
-for(let btn of btnInfosOfCardsProject){
-  btn.addEventListener('click', (event)=> {
+for (let btn of btnInfosOfCardsProject) {
+  btn.addEventListener('click', (event) => {
     let target = event;
     let parent = target.currentTarget.parentNode;
-    let containerExplanation = document.createElement("div");
     let divBlockedPage = document.createElement("div");
-    let explanation = document.createElement("div");
-    document.body.classList.add("overflowHidden");
-    document.body.prepend(divBlockedPage);
-    divBlockedPage.prepend(containerExplanation);
-    divBlockedPage.classList.add("test");
-    containerExplanation.classList.add("expander");
-    containerExplanation.prepend(explanation);
-    explanation.classList.add("explanation");
-    
-    console.log(parent.children[0].innerText)
-    for(let obj of explanationOfProjects){
-      if(obj.name === parent.children[0].innerText){
-        console.log('obj.name =  ' + obj.name)
-       // let nameOfProject = document.createElement('h4').innerText = obj.name;
-       let explanationContent = `
-       <div style="color:black;">
-       
-       <h5>${obj.name}</h5>
-       
-        <p>${obj.text}</p>
-       </div>
-       
-       `;
-        explanation.innerHTML = explanationContent
 
+    document.body.style.overflowY = "hidden";
+    document.body.prepend(divBlockedPage);
+    divBlockedPage.classList.add("filterBackground");
+
+    for (let obj of explanationOfProjects) {
+      if (obj.name === parent.children[0].innerText) {
+        console.log('obj.name =  ' + obj.name)
+        let containerExplanationTest = `
+          <div class="expander">
+            <button id="close">cross</button>
+            <div class="explanation">
+              <div style="color:red;">
+                <h5>${obj.name}</h5>
+                <p>${obj.text}</p>
+              </div>
+            </div>
+          </div>
+      `;
+        divBlockedPage.innerHTML = containerExplanationTest
+        let close = document.getElementById("close");
+        console.log(close);
+        
+        close.addEventListener('click', (event)=> {
+          let target = event;
+            let parent = target.currentTarget.parentNode;
+            console.log(parent.parentNode.parentNode)
+            document.body.removeChild(parent.parentNode)	
+            document.body.style.overflowY = "auto";
+
+        })
       }
     }
   })
 }
+/*
+let close = document.getElementsByClassName("close");
+console.log(close);
+
+close.addEventListener('click', (event)=> {
+  let target = event;
+    let parent = target.currentTarget.parentNode;
+    console.log(parent)
+})
 /*
 btnInfos.addEventListener('click', (event)=> {
   console.log(btnInfos)
