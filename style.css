@@ -856,7 +856,7 @@ header {
 }
 
 /** project ***/
-#project{
+#project {
   padding-top: 80px;
 }
 
@@ -907,9 +907,67 @@ header {
   background-color: #61dafb;
   color: whitesmoke;
 }
-.btn-infos{
+.btn-infos {
   height: 20px;
   width: 20px;
+}
+
+.expander {
+  position: absolute;
+  width: 90%;
+  height: 900px;
+ /* border-top: 1px solid red;*/
+  /*  z-index: 999;*/
+  /*top: 50%;*/
+  animation: expandline .8s;
+  margin: auto;
+  z-index: 3;
+}
+.expander-left {
+  left: 0;
+  position: absolute;
+  width: 90%;
+  height: 900px;
+ /* border-top: 1px solid red;*/
+  /*  z-index: 999;*/
+  /* transform: translate(-50%, -50%);*/
+  /*top: 50%;*/
+  animation: expandline .8s;
+  margin: auto;
+  z-index: 3;
+}
+.expander-right {
+  position: absolute;
+  width: 90%;
+  height: 900px;
+ /* border-top: 1px solid red;*/
+  /*  z-index: 999;*/
+  /* transform: translate(-50%, -50%);*/
+  /*top: 50%;*/
+  animation: expandline .8s;
+  margin: auto;
+  z-index: 3;
+}
+.test{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #282c344f;
+  z-index: 2;
+  overflow:hidden;
+}
+
+@keyframes expandline {
+  0% {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+  }
+  100% {
+    position: absolute;
+    width: 90%;
+    height: 1900px;
+  }
 }
 
 /* tablet device */

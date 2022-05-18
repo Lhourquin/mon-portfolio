@@ -53,3 +53,23 @@ setInterval(() => {
 }, 6000);
 
 
+const btnInfos = document.getElementsByClassName("project__container__card__btn-infos");
+console.log(btnInfos)
+
+for(let btn of btnInfos){
+  btn.addEventListener('click', (event)=> {
+    console.log(btnInfos)
+    let target = event;
+    let parent = target.currentTarget.parentNode;
+    document.getElementsByClassName("test1")[0].classList.add("test");
+    parent.classList.add("expander");
+    console.log(parent)
+  })
+}
+/*
+btnInfos.addEventListener('click', (event)=> {
+  console.log(btnInfos)
+  let target = event;
+  let parent = target.currentTarget.parentNode;
+  console.log(parent)
+})*/
