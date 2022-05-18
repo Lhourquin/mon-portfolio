@@ -1,4 +1,4 @@
-console.clear();
+// ANNIMATION NETWORK ARROUND PICTURE //
 let angle = 360 / 4;
 let finalAngle = -360;
 
@@ -52,27 +52,62 @@ setInterval(() => {
   slideOutAnnimationContainer[6].classList.remove("displayNoneAnnimation");
 }, 6000);
 
+// OPEN ELEMENT INFORMATION ABOUT PROJECT //
 
-const btnInfos = document.getElementsByClassName("project__container__card__btn-infos");
-console.log(btnInfos)
+const explanationOfProjects = [
+  {
+    name : "React Prayer Times",
+    text : "le projet react"
+  },
+  {
+    name : "Advice Geneartor App",
+    text : "le projet frontendmentor advice generator app"
 
-for(let btn of btnInfos){
+
+  },
+  {
+    name : "Interactive Rating Component",
+    text : "le projet frontendmentor interactive rating component"
+
+
+  },
+];
+const btnInfosOfCardsProject = document.getElementsByClassName("project__container__card__btn-infos");
+console.log(btnInfosOfCardsProject)
+
+for(let btn of btnInfosOfCardsProject){
   btn.addEventListener('click', (event)=> {
-    console.log(btnInfos)
     let target = event;
     let parent = target.currentTarget.parentNode;
-    let divExplanation = document.createElement("div");
+    let containerExplanation = document.createElement("div");
     let divBlockedPage = document.createElement("div");
-    let divInfo = document.createElement("div");
-   // document.getElementById("project").prepend(divExplanation);
-   document.body.classList.add("overflowHidden");
+    let explanation = document.createElement("div");
+    document.body.classList.add("overflowHidden");
     document.body.prepend(divBlockedPage);
-    divBlockedPage.prepend(divExplanation);
+    divBlockedPage.prepend(containerExplanation);
     divBlockedPage.classList.add("test");
-    divExplanation.classList.add("expander");
-    divExplanation.prepend(divInfo);
-    divInfo.classList.add("divInfo");
-    console.log(parent)
+    containerExplanation.classList.add("expander");
+    containerExplanation.prepend(explanation);
+    explanation.classList.add("explanation");
+    
+    console.log(parent.children[0].innerText)
+    for(let obj of explanationOfProjects){
+      if(obj.name === parent.children[0].innerText){
+        console.log('obj.name =  ' + obj.name)
+       // let nameOfProject = document.createElement('h4').innerText = obj.name;
+       let explanationContent = `
+       <div style="color:black;">
+       
+       <h5>${obj.name}</h5>
+       
+        <p>${obj.text}</p>
+       </div>
+       
+       `;
+        explanation.innerHTML = explanationContent
+
+      }
+    }
   })
 }
 /*
