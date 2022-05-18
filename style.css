@@ -13,7 +13,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: "Vesper Libre", serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /* Sections
@@ -856,6 +855,7 @@ header {
 }
 
 /** project ***/
+
 #project {
   padding-top: 80px;
 }
@@ -913,48 +913,33 @@ header {
 }
 
 .expander {
+  display: block;
+  text-align: center;
   position: absolute;
   width: 90%;
-  height: 900px;
- /* border-top: 1px solid red;*/
-  /*  z-index: 999;*/
-  /*top: 50%;*/
-  animation: expandline .8s;
+  height: 944px;
+  left: 5%;
+  top: 1%;
+  transform-origin: 0%;
+  animation: expandline 0.8s;
   margin: auto;
-  z-index: 3;
+  z-index: 4;
+  overflow-y: scroll;
+  background-color: #ffff00;
 }
-.expander-left {
-  left: 0;
-  position: absolute;
-  width: 90%;
-  height: 900px;
- /* border-top: 1px solid red;*/
-  /*  z-index: 999;*/
-  /* transform: translate(-50%, -50%);*/
-  /*top: 50%;*/
-  animation: expandline .8s;
-  margin: auto;
-  z-index: 3;
+.overflowHidden {
+  overflow: hidden;
 }
-.expander-right {
-  position: absolute;
-  width: 90%;
-  height: 900px;
- /* border-top: 1px solid red;*/
-  /*  z-index: 999;*/
-  /* transform: translate(-50%, -50%);*/
-  /*top: 50%;*/
-  animation: expandline .8s;
-  margin: auto;
-  z-index: 3;
+.divInfo {
+  height: 9000px;
 }
-.test{
-  height: 100vh;
+.test {
+  z-index: 4;
+  background-color: #282c34a5;
+  overflow-y: hidden;
+  height: 400vh;
   width: 100vw;
   position: fixed;
-  background-color: #282c344f;
-  z-index: 2;
-  overflow:hidden;
 }
 
 @keyframes expandline {

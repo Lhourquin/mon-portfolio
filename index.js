@@ -61,8 +61,17 @@ for(let btn of btnInfos){
     console.log(btnInfos)
     let target = event;
     let parent = target.currentTarget.parentNode;
-    document.getElementsByClassName("test1")[0].classList.add("test");
-    parent.classList.add("expander");
+    let divExplanation = document.createElement("div");
+    let divBlockedPage = document.createElement("div");
+    let divInfo = document.createElement("div");
+   // document.getElementById("project").prepend(divExplanation);
+   document.body.classList.add("overflowHidden");
+    document.body.prepend(divBlockedPage);
+    divBlockedPage.prepend(divExplanation);
+    divBlockedPage.classList.add("test");
+    divExplanation.classList.add("expander");
+    divExplanation.prepend(divInfo);
+    divInfo.classList.add("divInfo");
     console.log(parent)
   })
 }
