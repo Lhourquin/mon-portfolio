@@ -57,24 +57,55 @@ const btnInfosOfCardsProject = document.getElementsByClassName("project__contain
 const infosAboutProjects = [
   {
     name: "React Prayer Times",
+    image : "./assets/img/project/react-prayer-times/rpt-192.svg",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/react-logo.svg",
-      "./assets/img/icons/techno/Sass_Logo_Color.svg"
+      "./assets/img/icons/techno/Sass_Logo_Color.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
     ],
     ghLink: "https://github.com/Lhourquin/React-Prayer-Times",
-    description: "Application web progressive d'horaires de prières avec React JS"
-
+    description: "Application web progressive responsive d'horaires de prières développer avec React JS, utilisation des Service Worker, Web Worker, et plusieurs API.",
+    objectif : "ce projet avait pour objectifs d'acquérir les connaissances de base de cette librairie, SERVICE WORKER et WEB WORKER, et d'utiliser l'API.",
+    features : [
+      {
+        feature : "Mode hors ligne",
+        img : "./assets/img/project/react-prayer-times/rpt-192.svg"
+      },
+      {
+        feature : "Mode hors ligne",
+        img : ""
+      },
+      {
+        feature : "Mode hors ligne",
+        img : ""
+      }
+    ]
   },
   {
     name: "Advice Geneartor App",
-    text: "le projet frontendmentor advice generator app"
+    image : "./assets/img/project/frontendmentor/advice-app-generator/active-states.jpg",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg"
+    ],
+    ghLink: "https://github.com/Lhourquin/advice-generator-app",
+    objectif : "Challenge frontend mentor, réaliser un générateur de conseils/citation en utilisant une API, et les technos HTML CSS et JAVASCRIPT.",
+  
 
 
   },
   {
     name: "Interactive Rating Component",
-    text: "le projet frontendmentor interactive rating component"
+    image : "./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg"
+    ],
+    ghLink: "https://github.com/Lhourquin/interactive-rating-component",
+    objectif : "Challenge frontend mentor, réaliser un composant interactif de notation en HTML CSS et JAVASCRIPT.",
 
 
   },
@@ -92,14 +123,14 @@ for (let btn of btnInfosOfCardsProject) {
 
     for (let obj of infosAboutProjects) {
       if (obj.name === projectContainerCards.children[0].innerText) {
-        let img = document.createElement("img");
         let containerExplanation = `
           <div class="containerExplanation" data-aos="fade-up">
             <button id="closeContainerExplanation">cross</button>
               <div style="color:red;">
                 <h5>${obj?.name}</h5>
+                <img src="${obj?.image}"/>
                 <p> ${obj?.technos ? `Technos utiliser : ${obj.technos.map((icons) => { return `<img src="${icons}"/>` })}` : ""}</p>
-                <p>${obj?.ghLink ? `Lien du projet : <a href="${obj.ghLink}">${obj.ghLink}</a>`: "" }</p>
+                <p>${obj?.ghLink ? `Lien du projet : <a href="${obj.ghLink}">${obj.ghLink}</a>` : ""}</p>
                 <p> ${obj?.description ? `Description : ${obj.description}` : ""}</p>
               </div>
           </div>
