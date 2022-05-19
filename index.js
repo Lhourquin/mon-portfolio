@@ -53,8 +53,8 @@ setInterval(() => {
 }, 6000);
 
 // OPEN ELEMENT INFORMATION ABOUT PROJECT //
-
-const explanationOfProjects = [
+const btnInfosOfCardsProject = document.getElementsByClassName("project__container__card__btn-infos");
+const infosAboutProjects = [
   {
     name: "React Prayer Times",
     text: "le projet react"
@@ -72,45 +72,37 @@ const explanationOfProjects = [
 
   },
 ];
-const btnInfosOfCardsProject = document.getElementsByClassName("project__container__card__btn-infos");
-console.log(btnInfosOfCardsProject)
 
 for (let btn of btnInfosOfCardsProject) {
   btn.addEventListener('click', (event) => {
     let target = event;
     let parent = target.currentTarget.parentNode;
-    let divBlockedPage = document.createElement("div");
+    let filterBackground = document.createElement("div");
 
     document.body.style.overflowY = "hidden";
-    document.body.prepend(divBlockedPage);
-    divBlockedPage.classList.add("filterBackground");
+    document.body.prepend(filterBackground);
+    filterBackground.classList.add("filterBackground");
 
-    for (let obj of explanationOfProjects) {
+    for (let obj of infosAboutProjects) {
       if (obj.name === parent.children[0].innerText) {
-        console.log('obj.name =  ' + obj.name)
-        let containerExplanationTest = `
-          <div class="expander">
-            <button id="close">cross</button>
-            <div class="explanation">
+        let containerExplanation = `
+          <div class="expander" data-aos="fade-up">
+            <button id="closeContainerExplanation">cross</button>
               <div style="color:red;">
                 <h5>${obj.name}</h5>
                 <p>${obj.text}</p>
               </div>
-            </div>
           </div>
       `;
-        divBlockedPage.innerHTML = containerExplanationTest
-        let close = document.getElementById("close");
-        console.log(close);
-        
-        close.addEventListener('click', (event)=> {
+        filterBackground.innerHTML = containerExplanation;
+        let closeContainerExplanation = document.getElementById("closeContainerExplanation");
+        closeContainerExplanation.addEventListener('click', (event) => {
           let target = event;
-            let parent = target.currentTarget.parentNode;
-            console.log(parent.parentNode.parentNode)
-            document.body.removeChild(parent.parentNode)	
-            document.body.style.overflowY = "auto";
-
-        })
+          let parent = target.currentTarget.parentNode;
+          console.log(parent.parentNode.parentNode)
+          document.body.removeChild(parent.parentNode)
+          document.body.style.overflowY = "auto";
+        });
       }
     }
   })
