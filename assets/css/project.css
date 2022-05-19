@@ -25,7 +25,7 @@
   background-color: #43a0b9;
   text-align: center;
   border-radius: 9px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .project__container__card-techno {
   display: flex;
@@ -56,7 +56,7 @@
   width: 20px;
 }
 
-.expander {
+.containerExplanation {
   display: block;
   text-align: center;
   position: absolute;
@@ -66,7 +66,7 @@
   top: 5%;
   padding-bottom: 15px;
   z-index: 4;
-  background-color: #61dafb;
+  background-color: #43a0b9;
   border-radius: 9px;
 }
 

@@ -57,7 +57,14 @@ const btnInfosOfCardsProject = document.getElementsByClassName("project__contain
 const infosAboutProjects = [
   {
     name: "React Prayer Times",
-    text: "le projet react"
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/react-logo.svg",
+      "./assets/img/icons/techno/Sass_Logo_Color.svg"
+    ],
+    ghLink: "https://github.com/Lhourquin/React-Prayer-Times",
+    description: "Application web progressive d'horaires de prières avec React JS"
+
   },
   {
     name: "Advice Geneartor App",
@@ -75,8 +82,8 @@ const infosAboutProjects = [
 
 for (let btn of btnInfosOfCardsProject) {
   btn.addEventListener('click', (event) => {
-    let target = event;
-    let parent = target.currentTarget.parentNode;
+    let btnInfosProject = event.currentTarget;
+    let projectContainerCards = btnInfosProject.parentNode;
     let filterBackground = document.createElement("div");
 
     document.body.style.overflowY = "hidden";
@@ -84,42 +91,27 @@ for (let btn of btnInfosOfCardsProject) {
     filterBackground.classList.add("filterBackground");
 
     for (let obj of infosAboutProjects) {
-      if (obj.name === parent.children[0].innerText) {
+      if (obj.name === projectContainerCards.children[0].innerText) {
+        let img = document.createElement("img");
         let containerExplanation = `
-          <div class="expander" data-aos="fade-up">
+          <div class="containerExplanation" data-aos="fade-up">
             <button id="closeContainerExplanation">cross</button>
               <div style="color:red;">
-                <h5>${obj.name}</h5>
-                <p>${obj.text}</p>
+                <h5>${obj?.name}</h5>
+                <p> ${obj?.technos ? `Technos utiliser : ${obj.technos.map((icons) => { return `<img src="${icons}"/>` })}` : ""}</p>
+                <p>${obj?.ghLink ? `Lien du projet : <a href="${obj.ghLink}">${obj.ghLink}</a>`: "" }</p>
+                <p> ${obj?.description ? `Description : ${obj.description}` : ""}</p>
               </div>
           </div>
       `;
         filterBackground.innerHTML = containerExplanation;
         let closeContainerExplanation = document.getElementById("closeContainerExplanation");
-        closeContainerExplanation.addEventListener('click', (event) => {
-          let target = event;
-          let parent = target.currentTarget.parentNode;
-          console.log(parent.parentNode.parentNode)
-          document.body.removeChild(parent.parentNode)
+
+        closeContainerExplanation.addEventListener('click', () => {
+          document.body.removeChild(filterBackground)
           document.body.style.overflowY = "auto";
         });
       }
     }
   })
 }
-/*
-let close = document.getElementsByClassName("close");
-console.log(close);
-
-close.addEventListener('click', (event)=> {
-  let target = event;
-    let parent = target.currentTarget.parentNode;
-    console.log(parent)
-})
-/*
-btnInfos.addEventListener('click', (event)=> {
-  console.log(btnInfos)
-  let target = event;
-  let parent = target.currentTarget.parentNode;
-  console.log(parent)
-})*/
