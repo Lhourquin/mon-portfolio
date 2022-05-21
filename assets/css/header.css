@@ -236,6 +236,8 @@ header {
   -webkit-border-radius: 100%;
 
   outline: 4px solid #ffff00;
+  -webkit-appearance: none;
+
   outline-offset: 8px;
   --start-angle-of-rotation: 0deg;
   --end-angle-of-rotation: -360deg;
