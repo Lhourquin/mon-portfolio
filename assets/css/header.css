@@ -233,6 +233,8 @@ header {
   height: 290px;
   animation: rotate-opposite 40s linear infinite;
   border-radius: 100vw;
+  -webkit-border-radius: 100%;
+
   outline: 4px solid #ffff00;
   outline-offset: 8px;
   --start-angle-of-rotation: 0deg;

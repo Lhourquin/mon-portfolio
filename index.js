@@ -57,7 +57,7 @@ const btnInfosOfCardsProject = document.getElementsByClassName("project__contain
 const infosAboutProjects = [
   {
     name: "React Prayer Times",
-    image: "./assets/img/project/react-prayer-times/react-prayer-times.jpg",
+    image: "./assets/img/project/react-prayer-times/react-prayer-times-project.JPG",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/react-logo.svg",
@@ -165,7 +165,9 @@ const infosAboutProjects = [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
       "./assets/img/icons/techno/HTML5_Badge.svg",
-      "./assets/img/icons/techno/bootstrap-original-logo.svg"
+      "./assets/img/icons/techno/bootstrap-original-logo.svg",
+      "./assets/img/icons/techno/Sass_Logo_Color.svg",
+
 
     ],
     ghLink: "https://github.com/axelehrlich59/Laurent-ma-on",
