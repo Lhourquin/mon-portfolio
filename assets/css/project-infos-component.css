@@ -46,6 +46,7 @@
   display: block;
   height: auto;
   margin: auto;
+  border-radius: 9px;
 }
 #container-techno-icons {
   display: flex;

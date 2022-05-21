@@ -113,7 +113,7 @@ const infosAboutProjects = [
   },
   {
     name: "Interactive Rating Component",
-    image: "./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg",
+    image: "./assets/img/project/frontendmentor/rating-component/active-states.jpg",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
@@ -125,6 +125,57 @@ const infosAboutProjects = [
 
 
   },
+  {
+    name: "Christopher Benoit",
+    image: "./assets/img/project/christopher-benoit/christopher-benoit.JPG",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg",
+      "./assets/img/icons/techno/Sass_Logo_Color.svg"
+    ],
+    ghLink: "https://github.com/Lhourquin/interactive-rating-component",
+    linkProject : "https://lhourquin.github.io/Christopher-Benoit-Photographie/",
+    description: "Site vitrine d'un photographe paysagiste. ( exercice )",
+    objectif : "Réaliser un site vitrine responsive."
+
+
+  },
+  {
+    name: "Foodrum",
+    image: "./assets/img/project/foodrum/foodrum.JPG",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg",
+      "./assets/img/icons/techno/bootstrap-original-logo.svg"
+
+    ],
+    ghLink: "https://github.com/Lhourquin/Login-Simulation_localStorage",
+    linkProject : "https://lhourquin.github.io/Login-Simulation_localStorage/index.html",
+    description: "Simulation de connexion/inscription à un forum à l'aide du LocalStorage ( exercice )",
+    objectif : "Apprendre à utiliser le localStorage."
+
+
+  },
+  {
+    name: "Laurent Ehrlich",
+    image: "./assets/img/project/laurent-ehrlich/laurent-ehrlich.JPG",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg",
+      "./assets/img/icons/techno/bootstrap-original-logo.svg"
+
+    ],
+    ghLink: "https://github.com/axelehrlich59/Laurent-ma-on",
+    linkProject : "https://axelehrlich59.github.io/Laurent-ma-on/",
+    description: "Site vitrine pour un auto-entrepreneur du batiment.",
+    objectif : "Réaliser un site vitrine de A à Z, du cahier des charges, à l'organisations des tâches et de la conception du design, en binomes."
+
+
+  },
+  
 ];
 
 for (let btn of btnInfosOfCardsProject) {
