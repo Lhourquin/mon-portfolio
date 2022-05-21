@@ -57,7 +57,7 @@ const btnInfosOfCardsProject = document.getElementsByClassName("project__contain
 const infosAboutProjects = [
   {
     name: "React Prayer Times",
-    image : "./assets/img/project/react-prayer-times/rpt-192.svg",
+    image: "./assets/img/project/react-prayer-times/react-prayer-times.jpg",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/react-logo.svg",
@@ -65,47 +65,63 @@ const infosAboutProjects = [
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
     ],
     ghLink: "https://github.com/Lhourquin/React-Prayer-Times",
+    linkProject : "https://react-prayer-times.vercel.app/",
     description: "Application web progressive responsive d'horaires de prières développer avec React JS, utilisation des Service Worker, Web Worker, et plusieurs API.",
-    objectif : "ce projet avait pour objectifs d'acquérir les connaissances de base de cette librairie, SERVICE WORKER et WEB WORKER, et d'utiliser l'API.",
-    features : [
+    objectif: "Ce projet avait pour objectifs d'acquérir les connaissances de base de cette librairie, SERVICE WORKER et WEB WORKER, et d'utiliser l'API.",
+    features: [
       {
-        feature : "Mode hors ligne",
-        img : "./assets/img/project/react-prayer-times/rpt-192.svg"
+        feature: "Mode hors ligne",
+        img: "./assets/img/project/react-prayer-times/offline.gif"
       },
       {
-        feature : "Mode hors ligne",
-        img : ""
+        feature: "Instalation mobile",
+        img: "./assets/img/project/react-prayer-times/instalation.gif"
       },
       {
-        feature : "Mode hors ligne",
-        img : ""
+        feature: "Localisation",
+        img: "./assets/img/project/react-prayer-times/location.gif"
+      },
+      {
+        feature: "Recherche par ville et par pays",
+        img: "./assets/img/project/react-prayer-times/search-by-city-country.gif"
+      },
+      {
+        feature: "Avoir les horaires du mois",
+        img: "./assets/img/project/react-prayer-times/calendar.gif"
+      },
+      {
+        feature: "Lecture du Coran et de la traduction française",
+        img: "./assets/img/project/react-prayer-times/quran.gif"
       }
-    ]
+    ],
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
-    name: "Advice Geneartor App",
-    image : "./assets/img/project/frontendmentor/advice-app-generator/active-states.jpg",
+    name: "Advice Generator App",
+    image: "./assets/img/project/frontendmentor/advice-app-generator/active-states.jpg",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
       "./assets/img/icons/techno/HTML5_Badge.svg"
     ],
     ghLink: "https://github.com/Lhourquin/advice-generator-app",
-    objectif : "Challenge frontend mentor, réaliser un générateur de conseils/citation en utilisant une API, et les technos HTML CSS et JAVASCRIPT.",
-  
+    linkProject : "https://lhourquin.github.io/advice-generator-app/",
+    objectif: "Challenge frontend mentor, réaliser un générateur de conseils/citation en utilisant une API, et les technos HTML CSS et JAVASCRIPT.",
+
 
 
   },
   {
     name: "Interactive Rating Component",
-    image : "./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg",
+    image: "./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
       "./assets/img/icons/techno/HTML5_Badge.svg"
     ],
     ghLink: "https://github.com/Lhourquin/interactive-rating-component",
-    objectif : "Challenge frontend mentor, réaliser un composant interactif de notation en HTML CSS et JAVASCRIPT.",
+    linkProject : "https://lhourquin.github.io/interactive-rating-component/",
+    objectif: "Challenge frontend mentor, réaliser un composant interactif de notation en HTML CSS et JAVASCRIPT.",
 
 
   },
@@ -125,19 +141,56 @@ for (let btn of btnInfosOfCardsProject) {
       if (obj.name === projectContainerCards.children[0].innerText) {
         let containerExplanation = `
           <div class="containerExplanation" data-aos="fade-up">
-            <button id="closeContainerExplanation">cross</button>
-              <div style="color:red;">
-                <h5>${obj?.name}</h5>
-                <img src="${obj?.image}"/>
-                <p> ${obj?.technos ? `Technos utiliser : ${obj.technos.map((icons) => { return `<img src="${icons}"/>` })}` : ""}</p>
-                <p>${obj?.ghLink ? `Lien du projet : <a href="${obj.ghLink}">${obj.ghLink}</a>` : ""}</p>
-                <p> ${obj?.description ? `Description : ${obj.description}` : ""}</p>
+            <button id="closeContainerExplanation"><svg class="svg-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" fill="white"/></svg></button>
+              <div>
+                <h5 class="containerExplanation-h5">${obj?.name}</h5>
+                <img class="image-project" src="${obj?.image}"/>
+                 ${obj?.technos ?
+            `<div class="containerExplanation__p__container-techno-icons">
+                      <p><strong>Technos utiliser :</strong></p>
+                      <div id="container-techno-icons">
+                        ${obj.technos.map((icons) => { return `<img class="icons-techno" src="${icons}"/>` })}
+                      </div>
+            </div>`
+            : ""}
+                ${obj?.ghLink ? `<p><strong>Repo github du projet :</strong> <a href="${obj.ghLink}">${obj.ghLink}</a></p>` : ""}
+                ${obj?.linkProject ? `<p><strong>Lien du projet :</strong> <a href="${obj.linkProject}">${obj.linkProject}</a></p>` : ""}
+
+                ${obj?.description ? ` <p><strong>Description :</strong> ${obj.description}</p>` : ""}
+                 ${obj?.objectif ? `<p><strong>Objectif :</strong> ${obj.objectif}</p>` : ""}
+                ${obj?.features ? `
+                <div id="container-fonctionality">
+                  <h4 class="container-fonctionality__h4">Fonctionalitées : </h4>
+                  ${obj.features.map((obj) => {
+              return `
+                    
+                    <p>${obj.feature} :</p>
+                    <img src="${obj.img}"/>
+                    `
+            }
+
+            )}
+                </div>`: ""}
+                ${obj?.video ?
+            `<div>
+                  <p>Vidéo d'explication :</p>
+                  <iframe  src="${obj.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>` : ""}
               </div>
           </div>
       `;
+
         filterBackground.innerHTML = containerExplanation;
         let closeContainerExplanation = document.getElementById("closeContainerExplanation");
 
+        let containerTechnoIcons = document.getElementById("container-techno-icons");
+        let containerFonctionality = document.getElementById("container-fonctionality");
+        containerTechnoIcons.innerHTML = containerTechnoIcons.innerHTML.split(",").join("");
+
+        if (containerFonctionality) {
+          containerFonctionality.innerHTML = containerFonctionality.innerHTML.split(",").join("");
+
+        }
         closeContainerExplanation.addEventListener('click', () => {
           document.body.removeChild(filterBackground)
           document.body.style.overflowY = "auto";
