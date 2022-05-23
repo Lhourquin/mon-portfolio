@@ -113,7 +113,7 @@ const infosAboutProjects = [
         link: "https://quranenc.com/api/translation/sura/french_hameedullah/"
       }
     ],
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+   // video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
 
 
   },
