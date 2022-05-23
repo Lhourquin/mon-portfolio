@@ -235,7 +235,7 @@ header {
   border-radius: 100vw;
   -webkit-border-radius: 100%;
 
-  outline: 4px solid #ffff00;
+  border: 2px solid #ffff00;
   -webkit-appearance: none;
 
   outline-offset: 8px;
