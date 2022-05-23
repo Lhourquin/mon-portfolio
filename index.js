@@ -65,7 +65,7 @@ const infosAboutProjects = [
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
     ],
     ghLink: "https://github.com/Lhourquin/React-Prayer-Times",
-    linkProject : "https://react-prayer-times.vercel.app/",
+    linkProject: "https://react-prayer-times.vercel.app/",
     description: "Application web progressive responsive d'horaires de prières développer avec React JS, utilisation des Service Worker, Web Worker, et plusieurs API.",
     objectif: "Ce projet avait pour objectifs d'acquérir les connaissances de base de cette librairie, SERVICE WORKER et WEB WORKER, et d'utiliser l'API.",
     features: [
@@ -94,7 +94,28 @@ const infosAboutProjects = [
         img: "./assets/img/project/react-prayer-times/quran.gif"
       }
     ],
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    outils: "Figma, GIT, VS code, Trello",
+    api: [
+      {
+        service: "Localisation",
+        link: "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=XXXXXX&longitude=XXXXXXX&localityLanguage=fr"
+      },
+      {
+        service: "Horaires du jours",
+        link: "https://api.aladhan.com/v1/timingsByCity"
+      },
+      {
+        service: "Horaires du mois",
+        link: "https://api.aladhan.com/v1/calendarByCity"
+      },
+      {
+        service: "Coran et Traduction",
+        link: "https://quranenc.com/api/translation/sura/french_hameedullah/"
+      }
+    ],
+    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
+
   },
   {
     name: "Advice Generator App",
@@ -105,8 +126,9 @@ const infosAboutProjects = [
       "./assets/img/icons/techno/HTML5_Badge.svg"
     ],
     ghLink: "https://github.com/Lhourquin/advice-generator-app",
-    linkProject : "https://lhourquin.github.io/advice-generator-app/",
+    linkProject: "https://lhourquin.github.io/advice-generator-app/",
     objectif: "Challenge frontend mentor, réaliser un générateur de conseils/citation en utilisant une API, et les technos HTML CSS et JAVASCRIPT.",
+    outils: "GIT, VS code"
 
 
 
@@ -120,8 +142,9 @@ const infosAboutProjects = [
       "./assets/img/icons/techno/HTML5_Badge.svg"
     ],
     ghLink: "https://github.com/Lhourquin/interactive-rating-component",
-    linkProject : "https://lhourquin.github.io/interactive-rating-component/",
+    linkProject: "https://lhourquin.github.io/interactive-rating-component/",
     objectif: "Challenge frontend mentor, réaliser un composant interactif de notation en HTML CSS et JAVASCRIPT.",
+    outils: "GIT, VS code"
 
 
   },
@@ -135,9 +158,11 @@ const infosAboutProjects = [
       "./assets/img/icons/techno/Sass_Logo_Color.svg"
     ],
     ghLink: "https://github.com/Lhourquin/interactive-rating-component",
-    linkProject : "https://lhourquin.github.io/Christopher-Benoit-Photographie/",
+    linkProject: "https://lhourquin.github.io/Christopher-Benoit-Photographie/",
     description: "Site vitrine d'un photographe paysagiste. ( exercice )",
-    objectif : "Réaliser un site vitrine responsive."
+    objectif: "Réaliser un site vitrine responsive.",
+    outils: "GIT, VS code, Trello"
+
 
 
   },
@@ -152,9 +177,11 @@ const infosAboutProjects = [
 
     ],
     ghLink: "https://github.com/Lhourquin/Login-Simulation_localStorage",
-    linkProject : "https://lhourquin.github.io/Login-Simulation_localStorage/index.html",
+    linkProject: "https://lhourquin.github.io/Login-Simulation_localStorage/index.html",
     description: "Simulation de connexion/inscription à un forum à l'aide du LocalStorage ( exercice )",
-    objectif : "Apprendre à utiliser le localStorage."
+    objectif: "Apprendre à utiliser le localStorage.",
+    outils: "GIT, VS code, Trello"
+
 
 
   },
@@ -171,14 +198,61 @@ const infosAboutProjects = [
 
     ],
     ghLink: "https://github.com/axelehrlich59/Laurent-ma-on",
-    linkProject : "https://axelehrlich59.github.io/Laurent-ma-on/",
+    linkProject: "https://axelehrlich59.github.io/Laurent-ma-on/",
     description: "Site vitrine pour un auto-entrepreneur du batiment.",
-    objectif : "Réaliser un site vitrine de A à Z, du cahier des charges, à l'organisations des tâches et de la conception du design, en binomes."
-
+    objectif: "Réaliser un site vitrine de A à Z, du cahier des charges, à l'organisations des tâches et de la conception du design, en binomes.",
+    outils: "Adobe XD, GIT, VS code, Trello"
 
   },
-  
+  {
+    name: "Scrape Masjid",
+    image: "./assets/img/project/laurent-ehrlich/laurent-ehrlich.JPG",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg",
+      "./assets/img/icons/techno/Node.js_logo.svg",
+
+    ],
+    ghLink: "https://github.com/Lhourquin/ScrapeMasjid",
+    //linkProject : "https://axelehrlich59.github.io/Laurent-ma-on/",
+    //description: "Site vitrine pour un auto-entrepreneur du batiment.",
+    objectif: "Récupérer les données de l'API et les afficher sur une page (exercice)",
+    outils: "Terminal, GIT, VS code"
+
+  },
+  {
+    name: "Mon portfolio",
+    image: "./assets/img/project/laurent-ehrlich/laurent-ehrlich.JPG",
+    technos: [
+      "./assets/img/icons/techno/CSS3_logo.svg",
+      "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+      "./assets/img/icons/techno/HTML5_Badge.svg",
+
+    ],
+    ghLink: "https://github.com/Lhourquin/mon-portfolio",
+    //linkProject : "https://axelehrlich59.github.io/Laurent-ma-on/",
+    description: "Mon portfolio sur lequel vous naviguez actuellement.",
+    //objectif : "Récupérer les données de l'API et les afficher sur une page (exercice)",
+    outils: "Figma, GIT, VS code"
+
+  },
+
 ];
+
+function removeComma(container) {
+  container.innerHTML = container.innerHTML.split(",").join("");
+  return container;
+}
+
+function checkContainerExist(...containers){
+  let arrayOfContainers = [...containers];
+  arrayOfContainers.map((container)=> {
+    if(container){
+      removeComma(container);
+    }
+  })
+}
 
 for (let btn of btnInfosOfCardsProject) {
   btn.addEventListener('click', (event) => {
@@ -196,8 +270,8 @@ for (let btn of btnInfosOfCardsProject) {
           <div class="containerExplanation" data-aos="fade-up">
             <button id="closeContainerExplanation"><svg class="svg-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" fill="white"/></svg></button>
               <div>
-                <h5 class="containerExplanation-h5">${obj?.name}</h5>
-                <img class="image-project" src="${obj?.image}"/>
+                <h5 class="containerExplanation-h5">${obj.name}</h5>
+                <img class="image-project" src="${obj.image}"/>
                  ${obj?.technos ?
             `<div class="containerExplanation__p__container-techno-icons">
                       <p><strong>Technos utiliser :</strong></p>
@@ -208,9 +282,13 @@ for (let btn of btnInfosOfCardsProject) {
             : ""}
                 ${obj?.ghLink ? `<p><strong>Repo github du projet :</strong> <a href="${obj.ghLink}">${obj.ghLink}</a></p>` : ""}
                 ${obj?.linkProject ? `<p><strong>Lien du projet :</strong> <a href="${obj.linkProject}">${obj.linkProject}</a></p>` : ""}
-
+                  ${obj?.api ? `
+                    <p><strong>API utiliser (lien) :</strong> ${obj.api.map((key) => {
+                       return ` <a href="${key.link}">${key.service}</a>`})}
+                 </p> ` : ""}
                 ${obj?.description ? ` <p><strong>Description :</strong> ${obj.description}</p>` : ""}
                  ${obj?.objectif ? `<p><strong>Objectif :</strong> ${obj.objectif}</p>` : ""}
+                 ${obj?.outils ? `<p><strong>Outils :</strong> ${obj.outils}</p>` : ""}
                 ${obj?.features ? `
                 <div id="container-fonctionality">
                   <h4 class="container-fonctionality__h4">Fonctionalitées : </h4>
@@ -238,14 +316,10 @@ for (let btn of btnInfosOfCardsProject) {
 
         let containerTechnoIcons = document.getElementById("container-techno-icons");
         let containerFonctionality = document.getElementById("container-fonctionality");
-        containerTechnoIcons.innerHTML = containerTechnoIcons.innerHTML.split(",").join("");
-
-        if (containerFonctionality) {
-          containerFonctionality.innerHTML = containerFonctionality.innerHTML.split(",").join("");
-
-        }
+        checkContainerExist(containerFonctionality, containerTechnoIcons)
+       
         closeContainerExplanation.addEventListener('click', () => {
-          document.body.removeChild(filterBackground)
+          document.body.removeChild(filterBackground);
           document.body.style.overflowY = "auto";
         });
       }
