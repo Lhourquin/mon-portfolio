@@ -253,7 +253,7 @@ function checkContainerExist(...containers){
     }
   })
 }
-
+console.log()
 for (let btn of btnInfosOfCardsProject) {
   btn.addEventListener('click', (event) => {
     let btnInfosProject = event.currentTarget;
