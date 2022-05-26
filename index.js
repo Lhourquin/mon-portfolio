@@ -260,7 +260,7 @@ for (let btn of btnInfosOfCardsProject) {
     let projectContainerCards = btnInfosProject.parentNode;
     let filterBackground = document.createElement("div");
 
-    document.body.style.overflowY = "hidden";
+    document.documentElement.style.overflowY = "hidden";
     document.body.prepend(filterBackground);
     filterBackground.classList.add("filterBackground");
 
@@ -320,7 +320,7 @@ for (let btn of btnInfosOfCardsProject) {
        
         closeContainerExplanation.addEventListener('click', () => {
           document.body.removeChild(filterBackground);
-          document.body.style.overflowY = "auto";
+          document.documentElement.style.overflowY = "auto";
         });
       }
     }
