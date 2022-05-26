@@ -80,6 +80,7 @@ header {
 #home {
   height: 815px;
   display: flex;
+  position: relative;
 }
 .home__div__name-work--btnAbout-btnProject {
   width: 50%;
@@ -304,6 +305,7 @@ header {
   #home {
     flex-direction: column-reverse;
     margin-top: 155px;
+    height: 600px;
   }
   .home__div__name-work--btnAbout-btnProject,
   .home__div__photo-network {
@@ -325,7 +327,7 @@ header {
   .network-icons {
     height: 25px;
     width: 25px;
-    left: 90px;
+    left: 67px;
   }
   .network-icons:hover {
     height: 43px;
