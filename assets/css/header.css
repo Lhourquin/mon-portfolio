@@ -304,8 +304,8 @@ header {
   }
   #home {
     flex-direction: column-reverse;
-    margin-top: 155px;
-    height: 600px;
+    margin-top: 120px;
+    height: 521px;
   }
   .home__div__name-work--btnAbout-btnProject,
   .home__div__photo-network {
