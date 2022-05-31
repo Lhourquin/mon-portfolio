@@ -1,7 +1,7 @@
 .filterBackground {
   top: 0;
   z-index: 3;
-  background-color: #282c34a5;
+  background-color: #95eaef36;
   overflow-y: scroll;
   height: 100%;
   width: 100vw;
@@ -16,7 +16,7 @@
   left: 10%;
   top: 5%;
   z-index: 4;
-  background-color: #43a0b9;
+  background-color: #282c34;
   border-radius: 9px;
   padding: 0.5rem;
 }
@@ -37,8 +37,11 @@
 .svg-cross {
   height: 20px;
 }
-.containerExplanation-h5 {
+.containerExplanation-h4 {
   text-align: center;
+  font-size: 20px;
+}
+h4{
   font-size: 20px;
 }
 .image-project {
@@ -73,11 +76,13 @@
     left: 20%;
     top: 2%;
     z-index: 4;
-    background-color: #43a0b9;
+    background-color: #282c34;
     border-radius: 9px;
     padding: 0.5rem;
   }
-
+  .containerInformation{
+    padding: 70px;
+  }
   .image-project {
     height: 380px;
   }

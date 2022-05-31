@@ -25,6 +25,7 @@
   height: 400px;
   width: 300px;
   background-color: #43a0b9;
+  color: #ffffff;
   text-align: center;
   border-radius: 9px;
   margin-bottom: 60px;
@@ -45,13 +46,13 @@
   border-radius: 9px;
 }
 .project__container__card__btn-infos {
-  width: 70%;
+  width: 60%;
   margin: 0 auto 0 auto;
   padding: 0.5rem;
   border-radius: 9px;
   border: none;
   background-color: #61dafb;
-  color: whitesmoke;
+  color: #ffffff;
 }
 .btn-infos {
   height: 20px;
