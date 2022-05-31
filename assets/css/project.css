@@ -32,7 +32,7 @@
   color: #ffffff;
   text-align: center;
   border-radius: 9px;
-  margin-bottom: 60px;
+  margin: 60px;
 }
 .project__container__card-techno {
   display: flex;
