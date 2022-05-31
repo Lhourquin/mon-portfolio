@@ -275,13 +275,13 @@ for (let btn of btnInfosOfCardsProject) {
                 <div class="containerInformation">
                 ${obj?.technos ?
                   `<div class="containerExplanation__p__container-techno-icons">
-                            <h4><strong>Technos utiliser :</strong></h4>
+                            <h4><strong>Technologie utiliser :</strong></h4>
                             <div id="container-techno-icons">
                               ${obj.technos.map((icons) => { return `<img class="icons-techno" src="${icons}"/>` })}
                             </div>
                   </div>`
                   : ""}
-                      ${obj?.ghLink ? `<h4><strong>Repo github du projet :</strong></h4><p> <a href="${obj.ghLink}">${obj.ghLink}</a></p>` : ""}
+                      ${obj?.ghLink ? `<h4><strong>Repository github du projet :</strong></h4><p> <a href="${obj.ghLink}">${obj.ghLink}</a></p>` : ""}
                       ${obj?.linkProject ? `<h4><strong>Lien du projet :</strong></h4><p> <a href="${obj.linkProject}">${obj.linkProject}</a></p>` : ""}
                         ${obj?.api ? `
                           <h4><strong>API utiliser (lien) :</strong></h4><p> ${obj.api.map((key) => {
