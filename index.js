@@ -168,7 +168,7 @@ const infosAboutProjects = [
   },
   {
     name: "Foodrum",
-    image: "./assets/img/project/foodrum/foodrum.JPG",
+    image: "./assets/img/project/foodrum/foodrum-connect.JPG",
     technos: [
       "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
@@ -281,11 +281,11 @@ for (let btn of btnInfosOfCardsProject) {
                             </div>
                   </div>`
                   : ""}
-                      ${obj?.ghLink ? `<h4><strong>Repository github du projet :</strong></h4><p> <a target="”_blank”" href="${obj.ghLink}">${obj.ghLink}</a></p>` : ""}
-                      ${obj?.linkProject ? `<h4><strong>Lien du projet :</strong></h4><p> <a target="”_blank”" href="${obj.linkProject}">${obj.linkProject}</a></p>` : ""}
+                      ${obj?.ghLink ? `<h4><strong>Repository github du projet :</strong></h4><p> <a style="text-decoration : underline;" target="”_blank”" href="${obj.ghLink}">${obj.ghLink}</a></p>` : ""}
+                      ${obj?.linkProject ? `<h4><strong>Lien du projet :</strong></h4><p> <a style="text-decoration : underline;" target="”_blank”" href="${obj.linkProject}">${obj.linkProject}</a></p>` : ""}
                         ${obj?.api ? `
                           <h4><strong>API utiliser (lien) :</strong></h4><p> ${obj.api.map((key) => {
-                    return ` <a target="”_blank”" href="${key.link}">${key.service}</a>`
+                    return ` <a style="text-decoration : underline;" target="”_blank”" href="${key.link}">${key.service}</a>`
                   })}
                        </p> ` : ""}
                       ${obj?.description ? ` <h4><strong>Description :</strong></h4><p> ${obj.description}</p>` : ""}

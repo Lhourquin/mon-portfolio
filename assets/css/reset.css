@@ -9,10 +9,12 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
+  letter-spacing: 0.2px;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: "Vesper Libre", serif;
-  /* font-family: 'Ubuntu', sans-serif; */
+  /* font-family: 'Ubuntu', serif; */
+  /* font-family: Roboto sans-serif; */
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
