@@ -227,7 +227,7 @@ const infosAboutProjects = [
   },
   {
     name: "Job Static Listings",
-    image: "./assets/img/project/frontendmentor/job-listings/active-states.JPG",
+    image: "./assets/img/project/frontendmentor/job-listings/active-states.jpg",
     technos: [
       "./assets/img/icons/techno/styled-components-1.svg",
       "./assets/img/icons/techno/react-logo.svg",
