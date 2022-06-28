@@ -162,9 +162,6 @@ const infosAboutProjects = [
     description: "Site vitrine d'un photographe paysagiste. ( exercice )",
     objectif: "Réaliser un site vitrine responsive.",
     outils: "GIT, VS code, Trello"
-
-
-
   },
   {
     name: "Foodrum",
@@ -181,9 +178,6 @@ const infosAboutProjects = [
     description: "Simulation de connexion/inscription à un forum à l'aide du LocalStorage ( exercice )",
     objectif: "Apprendre à utiliser le localStorage.",
     outils: "GIT, VS code, Trello"
-
-
-
   },
   {
     name: "Laurent Ehrlich",
@@ -206,18 +200,15 @@ const infosAboutProjects = [
   },
   {
     name: "Scrape Masjid",
-    image: "./assets/img/project/laurent-ehrlich/laurent-ehrlich.JPG",
+    image: "./assets/img/project/scrape-masjid/scrapeMasjid.gif",
     technos: [
-      "./assets/img/icons/techno/CSS3_logo.svg",
       "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
       "./assets/img/icons/techno/HTML5_Badge.svg",
       "./assets/img/icons/techno/Node.js_logo.svg",
 
     ],
     ghLink: "https://github.com/Lhourquin/ScrapeMasjid",
-    //linkProject : "https://axelehrlich59.github.io/Laurent-ma-on/",
-    //description: "Site vitrine pour un auto-entrepreneur du batiment.",
-    objectif: "Récupérer les données de l'API et les afficher sur une page (exercice)",
+    objectif: "Scrapper les données d'une API et les afficher sur une page (exercice)",
     outils: "Terminal, GIT, VS code"
 
   },
@@ -231,10 +222,31 @@ const infosAboutProjects = [
 
     ],
     ghLink: "https://github.com/Lhourquin/mon-portfolio",
-    //linkProject : "https://axelehrlich59.github.io/Laurent-ma-on/",
     description: "Mon portfolio sur lequel vous naviguez actuellement.",
-    //objectif : "Récupérer les données de l'API et les afficher sur une page (exercice)",
     outils: "Figma, GIT, VS code"
+  },
+  {
+    name: "Job Static Listings",
+    image: "./assets/img/project/frontendmentor/job-listings/active-states.JPG",
+    technos: [
+      "./assets/img/icons/techno/styled-components-1.svg",
+      "./assets/img/icons/techno/react-logo.svg",
+    ],
+    linkProject: "https://static-job-listings-react-ten.vercel.app/",
+    ghLink: "https://github.com/Lhourquin/static-job-listings-master",
+    description: "Challenge Frontendmentor qui consiste à créer cette page d'offre d'emploi et à la rendre aussi proche que possible de la maquette.",
+    objectif: "Trier les offres selon les tags choisis et aborder les styled components (exercice)",
+    outils: "GIT, VS code"
+  },
+  {
+    name: "API pokemons (en cours)",
+    image: "./assets/img/project/pokemons-api/pikashu.png",
+    technos: [
+      "./assets/img/icons/techno/Node.js_logo.svg",
+    ],
+    ghLink: "https://github.com/Lhourquin/Node-JS-API-Rest-Pokemons",
+    objectif: "Objectif de ce projet : Réaliser une API Rest avec Node JS.",
+    outils: "Terminal, GIT, VS code, Insomnia"
 
   },
 
