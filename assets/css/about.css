@@ -149,6 +149,9 @@
 .JS {
   color: #ffff00;
 }
+.NODE{
+  color : #70C552;
+}
 /* tablet device */
 @media (max-width: 990px) {
   /** about **/
