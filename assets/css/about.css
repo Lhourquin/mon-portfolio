@@ -1,0 +1,249 @@
+/**** about ****/
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about__container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.h3-about {
+  color: #61dafb;
+
+  text-align: center;
+  font-size: 40px;
+}
+.about__container__logo--presentation {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.about__container__logo {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.about__container__logo__img-bigbang,
+.about__container__logo__img-LH {
+  position: absolute;
+}
+.about__container__logo__img-LH {
+  position: relative;
+  left: 10px;
+  top: -10px;
+}
+.slide-out-fwd-center {
+  transition: 0.3s;
+  position: absolute;
+  -webkit-animation: slide-out-fwd-center 3s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  animation: slide-out-fwd-center 3s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    infinite;
+}
+#about__container__logo-annimation {
+  position: absolute;
+  height: 100%;
+  width: 55%;
+}
+.consoleLog {
+  top: 15%;
+  left: 50%;
+}
+.onClick {
+  top: 20%;
+  left: 70%;
+}
+.binary00101 {
+  top: 39%;
+  right: 5%;
+}
+.class {
+  top: 40%;
+  left: 10%;
+}
+.map {
+  top: 65%;
+  left: 20%;
+}
+.render {
+  top: 75%;
+  left: 40%;
+}
+.while {
+  top: 70%;
+  left: 55%;
+}
+.binary01001 {
+  top: 67%;
+  left: 75%;
+}
+/**
+   * ----------------------------------------
+   * animation slide-out-fwd-center
+   * ----------------------------------------
+   */
+@-webkit-keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+
+  from {
+    font-size: 0px;
+    color: #282c34;
+  }
+  to {
+    font-size: 15px;
+    color: whitesmoke;
+  }
+}
+@keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  from {
+    font-size: 0px;
+    color: #282c34;
+  }
+  to {
+    font-size: 13px;
+    color: whitesmoke;
+  }
+}
+.displayNoneAnnimation {
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.about-container__p-presentation {
+  width: 600px;
+  font-size: 25px;
+  align-self: center;
+}
+.pro-student {
+  color: #61dafb;
+}
+.ZPD {
+  color: #43a0b9;
+}
+.react {
+  color: #61dafb;
+}
+.JS {
+  color: #ffff00;
+}
+.NODE{
+  color : #70C552;
+}
+/* tablet device */
+@media (max-width: 990px) {
+  /** about **/
+  .about-container__p-presentation {
+    width: 400px;
+    font-size: 22px;
+  }
+  .about__container__logo__img-bigbang,
+  .about__container__logo__img-LH {
+    height: 350px;
+  }
+  .about__container__logo__img-LH {
+    left: 6px;
+    top: 0px;
+  }
+  .h3-about {
+    font-size: 30px;
+  }
+  /****** annimation logo ******/
+}
+
+@media (max-width: 650px) {
+  /** about **/
+  #about {
+    justify-content: space-evenly;
+  }
+  .about__container__logo--presentation {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__container__logo {
+    text-align: center;
+    width: 100%;
+    font-size: 2px;
+  }
+  .about__container__logo__img-bigbang,
+  .about__container__logo__img-LH {
+    height: 115px;
+  }
+  /**
+   * ----------------------------------------
+   * animation slide-out-fwd-center
+   * ----------------------------------------
+   */
+  @-webkit-keyframes slide-out-fwd-center {
+    0% {
+      -webkit-transform: translateZ(1);
+      transform: translateZ(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(600px);
+      transform: translateZ(600px);
+      opacity: 0;
+    }
+
+    from {
+      font-size: 0px;
+      color: #282c34;
+    }
+    to {
+      font-size: 15px;
+      color: whitesmoke;
+    }
+  }
+  @keyframes slide-out-fwd-center {
+    0% {
+      -webkit-transform: translateZ(1);
+      transform: translateZ(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(600px);
+      transform: translateZ(600px);
+      opacity: 0;
+    }
+    from {
+      font-size: 0px;
+      color: #282c34;
+    }
+    to {
+      font-size: 5px;
+      color: whitesmoke;
+    }
+  }
+  #about__container__logo-annimation {
+    width: 20%;
+  }
+
+  .about-container__p-presentation {
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+  }
+}

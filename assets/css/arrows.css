@@ -1,0 +1,131 @@
+/** arrows **/
+
+/* .arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  .arrows-project {
+    width: 60px;
+    height: 72px;
+    position: relative;
+    left: 50%;
+    margin-left: -30px;
+    cursor: pointer;
+  }
+  
+  .arrows path {
+    stroke: #95eaef;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+  }
+  .arrows-project path {
+    stroke: #95eaef;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+  }
+  
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes arrow Safari and Chrome {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .arrows,
+  .arrows-project,
+  path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+  /* }
+  
+  .arrows,
+  .arrows-project,
+  path.a2 {
+    animation-delay: -0.5s;
+    /* -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+  /* }
+  
+  .arrows,
+  .arrows-project path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+ /* } */
+/* 
+ .arrows{
+  height: 75px;
+  text-align: center;
+}
+ .arrow-about{position: absolute;
+ bottom: 0;
+ left: 45.2%;} */
+
+.arrow{
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  /* transform: translate(-50%,-50%); */
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #61dafb;
+  border-right: 5px solid #61dafb;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  border-bottom: 5px solid #ffff00;
+  border-right: 5px solid #ffff00;
+  animation-delay: -0.2s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-10px,-10px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(10px,10px);
+  }
+}
+.arrow-project{
+  position: relative;
+  bottom: 0;
+}
