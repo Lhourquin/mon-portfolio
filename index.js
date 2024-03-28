@@ -1,12 +1,4 @@
-"use strict";
-let infos;
-
-fetch('./infos.json')
-  .then((response => response.json()))
-  .then((data) => {
-    infos = data.data
-  })
-  .catch(error => console.error("Erreur lors du chargement du JSON:", error));
+import './project/project-card/project-card.js';
 
 // OPEN ELEMENT INFORMATION ABOUT PROJECT //
 const btnInfosOfCardsProject = document.getElementsByClassName("project__container__card__btn-infos");
@@ -24,7 +16,7 @@ function checkContainerExist(...containers) {
     }
   })
 }
-console.log()
+
 for (let btn of btnInfosOfCardsProject) {
   btn.addEventListener('click', (event) => {
     let btnInfosProject = event.currentTarget;
