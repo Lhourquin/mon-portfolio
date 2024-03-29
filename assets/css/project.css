@@ -60,6 +60,7 @@
   border-radius: 9px;
   background-color: #61dafb;
   color: #282c34;
+  cursor: pointer;
 }
 
 .project__container__card__btn-infos:hover {

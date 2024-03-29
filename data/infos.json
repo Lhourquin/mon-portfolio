@@ -2,6 +2,7 @@
     "data": [
         {
             "id": 1,
+            "fade":"fade-left",
             "projectName": "React Prayer Times",
             "img": "./assets/img/project/react-prayer-times/rpt-192.svg",
             "technoLogos": [
@@ -21,6 +22,7 @@
         },
         {
             "id": 2,
+            "fade": "fade-up",
             "projectName": "Scrap Masjid",
             "img": "./assets/img/project/scrape-masjid/scrapeData.jpeg",
             "technoLogos": [
@@ -36,6 +38,7 @@
         },
         {
             "id": 3,
+            "fade":"fade-right",
             "projectName": "Christopher Benoit",
             "img": "./assets/img/project/christopher-benoit/christopher-benoit-logo.png",
             "technoLogos": [
@@ -55,6 +58,7 @@
         },
         {
             "id": 4,
+            "fade":"fade-left",
             "projectName": "Foodrum",
             "img": "./assets/img/project/foodrum/foodrum.JPG",
             "technoLogos": [
@@ -78,6 +82,7 @@
         },
         {
             "id": 5,
+            "fade":"fade-up",
             "projectName": "Laurent Ehrlich",
             "img": "./assets/img/project/laurent-ehrlich/laurent-logo.png",
             "technoLogos": [
@@ -105,6 +110,7 @@
         },
         {
             "id": 6,
+            "fade":"fade-right",
             "projectName": "Interactive Rating Component",
             "img": "./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg" ,
             "technoLogos": [
@@ -124,8 +130,9 @@
         },
         {
             "id": 7,
+            "fade":"fade-left",
             "projectName": "Advice Generator App",
-            "img": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" ,
+            "img": "./assets/img/project/frontendmentor/advice-app-generator/generator-desktop-preview.jpg" ,
             "technoLogos": [
                 {
                     "name": "HTML 5",
@@ -143,6 +150,7 @@
         },
         {
             "id": 8,
+            "fade":"fade-down",
             "projectName": "Job Static Listings",
             "img": "./assets/img/project/frontendmentor/job-listings/desktop-job-listings.jpg",
             "technoLogos": [

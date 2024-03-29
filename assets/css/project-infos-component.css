@@ -1,4 +1,4 @@
-.filterBackground {
+#filterBackground {
   top: 0;
   z-index: 3;
   background-color: #95eaef36;
@@ -22,18 +22,17 @@
   margin-bottom: 10%;
 }
 #closeContainerExplanation {
-  position: relative;
   text-decoration: none;
   background: none;
-  color: inherit;
   border: none;
-  padding: 0;
-  font: inherit;
   cursor: pointer;
-  outline: inherit;
-  display: flex;
-  justify-content: end;
-  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white; 
 }
 .svg-cross {
   height: 20px;

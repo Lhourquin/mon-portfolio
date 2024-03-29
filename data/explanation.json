@@ -1,0 +1,189 @@
+{
+    "data": [
+        {
+            "id" : "project_id-1",
+            "name": "React Prayer Times",
+            "image": "./assets/img/project/react-prayer-times/react-prayer-times-project.JPG",
+            "technos": [
+              "./assets/img/icons/techno/CSS3_logo.svg",
+              "./assets/img/icons/techno/react-logo.svg",
+              "./assets/img/icons/techno/Sass_Logo_Color.svg",
+              "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+            ],
+            "ghlink": "https://github.com/Lhourquin/React-Prayer-Times",
+            "linkProject": "https://react-prayer-times.vercel.app/",
+            "description": "Application web progressive responsive d'horaires de prières développer avec React JS, utilisation des Service Worker, Web Worker, et plusieurs API.",
+            "objectif": "Ce projet avait pour objectifs d'acquérir les connaissances de base de cette librairie, SERVICE WORKER et WEB WORKER, et d'utiliser l'API.",
+            "features": [
+              {
+                "feature": "Mode hors ligne",
+                "img": "./assets/img/project/react-prayer-times/offline.gif"
+              },
+              {
+                "feature":"Instalation mobile",
+                "img": "./assets/img/project/react-prayer-times/instalation.gif"
+              },
+              {
+                "feature":"Localisation",
+                "img": "./assets/img/project/react-prayer-times/location.gif"
+              },
+              {
+                "feature":"Recherche par ville et par pays",
+                "img": "./assets/img/project/react-prayer-times/search-by-city-country.gif"
+              },
+              {
+                "feature":"Avoir les horaires du mois",
+                "img": "./assets/img/project/react-prayer-times/calendar.gif"
+              },
+              {
+                "feature":"Lecture du Coran et de la traduction française",
+                "img": "./assets/img/project/react-prayer-times/quran.gif"
+              }
+            ],
+            "outils": "Figma, GIT, VS code, Trello",
+            "api": [
+              {
+                "service": "Localisation",
+                "link": "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=XXXXXX&longitude=XXXXXXX&localityLanguage=fr"
+              },
+              {
+                "service": "Horaires du jours",
+                "link": "https://api.aladhan.com/v1/timingsByCity"
+              },
+              {
+                "service": "Horaires du mois",
+                "link": "https://api.aladhan.com/v1/calendarByCity"
+              },
+              {
+                "service": "Coran et Traduction",
+                "link": "https://quranenc.com/api/translation/sura/french_hameedullah/"
+              }
+            ]
+        
+        
+          },
+        {
+            "id" : "project_id-7",
+            "name": "Advice Generator App",
+            "image": "./assets/img/project/frontendmentor/advice-app-generator/active-states.jpg",
+            "technos": [
+                "./assets/img/icons/techno/CSS3_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/advice-generator-app",
+            "linkProject": "https://lhourquin.github.io/advice-generator-app/",
+            "objectif": "Challenge frontend mentor, réaliser un générateur de conseils/citation en utilisant une API, et les technos HTML CSS et JAVASCRIPT.",
+            "outils": "GIT, VS code"
+        },
+        {
+            "id" : "project_id-6",
+            "name": "Interactive Rating Component",
+            "image": "./assets/img/project/frontendmentor/rating-component/active-states.jpg",
+            "technos": [
+                "./assets/img/icons/techno/CSS3_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/interactive-rating-component",
+            "linkProject": "https://lhourquin.github.io/interactive-rating-component/",
+            "objectif": "Challenge frontend mentor, réaliser un composant interactif de notation en HTML CSS et JAVASCRIPT.",
+            "outils": "GIT, VS code"
+        },
+        { "id" : "project_id-3",
+            "name": "Christopher Benoit",
+            "image": "./assets/img/project/christopher-benoit/christopher-benoit.JPG",
+            "technos": [
+                "./assets/img/icons/techno/CSS3_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg",
+                "./assets/img/icons/techno/Sass_Logo_Color.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/Christopher-Benoit-Photographie",
+            "linkProject": "https://lhourquin.github.io/Christopher-Benoit-Photographie/",
+            "description": "Site vitrine d'un photographe paysagiste. ( exercice )",
+            "objectif": "Réaliser un site vitrine responsive.",
+            "outils": "GIT, VS code, Trello"
+        },
+        { "id" :"project_id-4",
+            "name": "Foodrum",
+            "image": "./assets/img/project/foodrum/foodrum-connect.JPG",
+            "technos": [
+                "./assets/img/icons/techno/CSS3_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg",
+                "./assets/img/icons/techno/bootstrap-original-logo.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/Login-Simulation_localStorage",
+            "linkProject": "https://lhourquin.github.io/Login-Simulation_localStorage/index.html",
+            "description": "Simulation de connexion/inscription à un forum à l'aide du LocalStorage ( exercice )",
+            "objectif": "Apprendre à utiliser le localStorage.",
+            "outils": "GIT, VS code, Trello"
+        },
+        {
+            "id": "project_id-5",
+            "name": "Laurent Ehrlich",
+            "image": "./assets/img/project/laurent-ehrlich/laurent-ehrlich.JPG",
+            "technos": [
+                "./assets/img/icons/techno/CSS3_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg",
+                "./assets/img/icons/techno/bootstrap-original-logo.svg",
+                "./assets/img/icons/techno/Sass_Logo_Color.svg"
+            ],
+            "ghLink": "https://github.com/axelehrlich59/Laurent-ma-on",
+            "linkProject": "https://axelehrlich59.github.io/Laurent-ma-on/",
+            "description": "Site vitrine pour un auto-entrepreneur du batiment.",
+            "objectif": "Réaliser un site vitrine de A à Z, du cahier des charges, à l'organisations des tâches et de la conception du design, en binomes.",
+            "outils": "Adobe XD, GIT, VS code, Trello"
+        },
+        { "id" : "project_id-2",
+            "name": "Scrape Masjid",
+            "image": "./assets/img/project/scrape-masjid/scrapeMasjid.gif",
+            "technos": [
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg",
+                "./assets/img/icons/techno/Node.js_logo.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/ScrapeMasjid",
+            "objectif": "Scrapper les données d'une API et les afficher sur une page (exercice)",
+            "outils": "Terminal, GIT, VS code"
+        },
+        {
+            "name": "Mon portfolio",
+            "image": "./assets/img/project/laurent-ehrlich/laurent-ehrlich.JPG",
+            "technos": [
+                "./assets/img/icons/techno/CSS3_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/HTML5_Badge.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/mon-portfolio",
+            "description": "Mon portfolio sur lequel vous naviguez actuellement.",
+            "outils": "Figma, GIT, VS code"
+        },
+        { 
+            "id": "project_id-8",
+            "name": "Job Static Listings",
+            "image": "./assets/img/project/frontendmentor/job-listings/active-states.jpg",
+            "technos": [
+                "./assets/img/icons/techno/styled-components-1.svg",
+                "./assets/img/icons/techno/react-logo.svg"
+            ],
+            "linkProject": "https://static-job-listings-react-ten.vercel.app/",
+            "ghLink": "https://github.com/Lhourquin/static-job-listings-master",
+            "description": "Challenge Frontendmentor qui consiste à créer cette page d'offre d'emploi et à la rendre aussi proche que possible de la maquette.",
+            "objectif": "Trier les offres selon les tags choisis et aborder les styled components (exercice)",
+            "outils": "GIT, VS code"
+        },
+        {
+            "name": "API pokemons (en cours)",
+            "image": "./assets/img/project/pokemons-api/pikashu.png",
+            "technos": [
+                "./assets/img/icons/techno/Node.js_logo.svg"
+            ],
+            "ghLink": "https://github.com/Lhourquin/Node-JS-API-Rest-Pokemons",
+            "objectif": "objectif de ce projet : Réaliser une API Rest avec Node JS.",
+            "outils": "Terminal, GIT, VS code, Insomnia"
+        }
+    ]
+}
