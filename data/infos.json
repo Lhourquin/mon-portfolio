@@ -1,0 +1,193 @@
+{
+    "data": [
+        {
+            "id": 2,
+            "fade": "fade-up",
+            "projectName": "Scrap Masjid",
+            "img": "./assets/img/project/scrape-masjid/scrapeData.jpeg",
+            "technoLogos": [
+                {
+                    "name": "Node Js",
+                    "src": "./assets/img/icons/techno/Node.js_logo.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "fade":"fade-right",
+            "projectName": "Christopher Benoit",
+            "img": "./assets/img/project/christopher-benoit/christopher-benoit-logo.png",
+            "technoLogos": [
+                {
+                    "name": "HTML 5",
+                    "src": "./assets/img/icons/techno/HTML5_Badge.svg"
+                },
+                {
+                    "name": "Sass",
+                    "src": "./assets/img/icons/techno/Sass_Logo_Color.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "fade":"fade-left",
+            "projectName": "Foodrum",
+            "img": "./assets/img/project/foodrum/foodrum.JPG",
+            "technoLogos": [
+                {
+                    "name": "HTML 5",
+                    "src": "./assets/img/icons/techno/HTML5_Badge.svg"
+                },
+                {
+                    "name": "CSS 3",
+                    "src": "./assets/img/icons/techno/CSS3_logo.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                },
+                {
+                    "name": "Bootstrap",
+                    "src": "./assets/img/icons/techno/bootstrap-original-logo.svg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "fade":"fade-up",
+            "projectName": "Laurent Ehrlich",
+            "img": "./assets/img/project/laurent-ehrlich/laurent-logo.png",
+            "technoLogos": [
+                {
+                    "name": "HTML 5",
+                    "src": "./assets/img/icons/techno/HTML5_Badge.svg"
+                },
+                {
+                    "name": "CSS 3",
+                    "src": "./assets/img/icons/techno/CSS3_logo.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                },
+                {
+                    "name": "Bootstrap",
+                    "src": "./assets/img/icons/techno/bootstrap-original-logo.svg"
+                },
+                {
+                    "name": "Sass",
+                    "src": "./assets/img/icons/techno/Sass_Logo_Color.svg"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "fade":"fade-right",
+            "projectName": "Interactive Rating Component",
+            "img": "./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg" ,
+            "technoLogos": [
+                {
+                    "name": "HTML 5",
+                    "src": "./assets/img/icons/techno/HTML5_Badge.svg"
+                },
+                {
+                    "name": "CSS 3",
+                    "src": "./assets/img/icons/techno/CSS3_logo.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "fade":"fade-left",
+            "projectName": "Advice Generator App",
+            "img": "./assets/img/project/frontendmentor/advice-app-generator/generator-desktop-preview.jpg" ,
+            "technoLogos": [
+                {
+                    "name": "HTML 5",
+                    "src": "./assets/img/icons/techno/HTML5_Badge.svg"
+                },
+                {
+                    "name": "CSS 3",
+                    "src": "./assets/img/icons/techno/CSS3_logo.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "fade":"fade-down",
+            "projectName": "Job Static Listings",
+            "img": "./assets/img/project/frontendmentor/job-listings/desktop-job-listings.jpg",
+            "technoLogos": [
+                {
+                    "name": "React Js",
+                    "src": "./assets/img/icons/techno/react-logo.svg"
+                },
+                {
+                    "name": "Styled Component",
+                    "src": "./assets/img/icons/techno/styled-components-1.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "fade":"fade-left",
+            "projectName": "React Prayer Times",
+            "img": "./assets/img/project/react-prayer-times/rpt-192.svg",
+            "technoLogos": [
+                {
+                    "name": "React Js",
+                    "src": "./assets/img/icons/techno/react-logo.svg"
+                },
+                {
+                    "name": "Sass",
+                    "src": "./assets/img/icons/techno/Sass_Logo_Color.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "isNew":true,
+            "fade": "fade-up",
+            "projectName": "Training Book",
+            "img": "./assets/img/project/training-book/training-book-logo.jpg",
+            "technoLogos": [
+                {
+                    "name": "Node Js",
+                    "src": "./assets/img/icons/techno/Node.js_logo.svg"
+                },
+                {
+                    "name": "Ionic",
+                    "src": "./assets/img/icons/techno/IONIC.svg"
+                },
+                {
+                    "name" : "Angular",
+                    "src": "./assets/img/icons/techno/angular.svg"
+                }
+            ]
+        }
+    ]
+}

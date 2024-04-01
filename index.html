@@ -1,272 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- add icon link -->
-    <link rel = "icon" href ="./assets/img/logo/LH-TAG-MOBILE.svg" type = "image/x-icon">
-    <link rel="stylesheet" href="main.css" />
-    <title>Lucas Hourquin</title>
-  </head>
-  <body id="top">
-    <header >
-      <nav class="header__nav">
-        <div class="container-logo" data-aos="fade-right">
-          <a href="#top">
-            <img class="big-bang rotate" src="./assets/img/logo/big-bang.svg" alt="logo" />
-            <img
-              class="LH-TAG-desktop"
-              src="./assets/img/logo/LH-TAG-DESKTOP.svg"
-              alt="logo"
-            />
-            <img class="LH-TAG-mobile" src="./assets/img/logo/LH-TAG-MOBILE.svg" alt="logo" />
-          </a>
-          
-        </div>
-        <ul class="header__nav__ul">
-          <li class="header__nav__ul__li">
-            <a class="header__nav__ul__li__a" href="#top">Hello World</a>
-          </li>
-          <li class="header__nav__ul__li">
-            <a class="header__nav__ul__li__a" href="#about">A propos</a>
-          </li>
-          <li class="header__nav__ul__li">
-            <a class="header__nav__ul__li__a" href="#project">Réalisation</a>
-          </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- add icon link -->
+  <link rel="icon" href="./assets/img/logo/LH-TAG-MOBILE.svg" type="image/x-icon">
+  <link rel="stylesheet" href="main.css" />
+  <title>Lucas Hourquin</title>
+</head>
+
+<body id="top">
+  <header>
+    <nav class="header__nav">
+      <div class="container-logo" data-aos="fade-right">
+        <a href="#top">
+          <img class="big-bang rotate" src="./assets/img/logo/big-bang.svg" alt="logo" />
+          <img class="LH-TAG-desktop" src="./assets/img/logo/LH-TAG-DESKTOP.svg" alt="logo" />
+          <img class="LH-TAG-mobile" src="./assets/img/logo/LH-TAG-MOBILE.svg" alt="logo" />
+        </a>
+      </div>
+      <ul class="header__nav__ul">
+        <li class="header__nav__ul__li">
+          <a class="header__nav__ul__li__a" href="#top">Hello World</a>
+        </li>
+        <li class="header__nav__ul__li">
+          <a class="header__nav__ul__li__a" href="#about">A propos</a>
+        </li>
+        <li class="header__nav__ul__li">
+          <a class="header__nav__ul__li__a" href="#project">Réalisation</a>
+        </li>
         <!--
           <li class="header__nav__ul__li">
             <a class="header__nav__ul__li__a" href="#contact">Contact</a>
           </li>
         -->
-        </ul>
-      </nav>
-      <section id="home">
-        <div class="home__div__name-work--btnAbout-btnProject" data-aos="fade-right">
-          <div class="name--work">
-            <h1 class="h1-name">Lucas <span class="lastname">Hourquin</span></h1>
-            <h2 class="h2-work">Développeur Web</h2>
-          </div>
-          <div class="btnAbout--btnProject">
-            <button class="btnAbout" ><a href="#about">A propos</a></button>
-            <button class="btnProject" ><a href="#project">Réalisation</a></button>
-          </div>
+      </ul>
+    </nav>
+    <section id="home">
+      <div class="home__div__name-work--btnAbout-btnProject" data-aos="fade-right">
+        <div class="name--work">
+          <h1 class="h1-name">Lucas <span class="lastname">Hourquin</span></h1>
+          <h2 class="h2-work">Développeur Web</h2>
         </div>
-        <div class="home__div__photo-network">
-          <!-- <div class="photo" data-aos="zoom-in"></div> -->
-          <img class="photo" src="./assets/img/photo/logo-lh.PNG"/>
-          <a
-            class="network"
-            target="”_blank”"
-            href="https://github.com/Lhourquin"
-            ><div class="network-icons github" 
-          ></div></a>
-          <a
-            class="network"
-            target="”_blank”"
-            href="https://www.instagram.com/arobazabdelrahman/?hl=fr"
-            ><div class="network-icons insta" 
-            ></div>
-          <a
-            class="network"
-            target="”_blank”"
-            href="https://www.linkedin.com/in/lucas-hourquin-128969184/"
-            ><div class="network-icons linkedin" 
-            ></div></a>
-          <a
-            class="network"
-            target="”_blank”"
-            href="https://www.twitter.com/LHourquin"
-            ><div class="network-icons twitter" 
-            ></div></a>
+        <div class="btnAbout--btnProject">
+          <button class="btnAbout"><a href="#about">A propos</a></button>
+          <button class="btnProject"><a href="#project">Réalisation</a></button>
         </div>
-          <a class="arrow" href="#about">
-          <!--img class="arrows " src="./assets/img/icons/button/angle-double-down-solid.svg"-->
-            <span></span>
-            <span></span>
-
+      </div>
+      <div class="home__div__photo-network">
+        <!-- <div class="photo" data-aos="zoom-in"></div> -->
+        <img class="photo" data-aos="zoom-in" src="./assets/img/photo/logo-lh.PNG" />
+        <a class="network" target="”_blank”" href="https://github.com/Lhourquin">
+          <div class="network-icons github"></div>
         </a>
-        
-      </section>
-    
-    </header>
-    <main>
-      <section id="about">
-        <div class="about__container">
-          <h3 class="h3-about" data-aos="fade-down">A propos</h3>
-          <div class="about__container__logo--presentation">
-            <div class="about__container__logo " data-aos="zoom-in">
-              <img class="about__container__logo__img-bigbang rotate"src="./assets/img/logo/big-bang.svg">
-              <img class="about__container__logo__img-LH" src="./assets/img/logo/LH-TAG-MOBILE.svg" alt="logo">
-              <div id="about__container__logo-annimation">
-                <p class="displayNoneAnnimation consoleLog">console.log()</p>
-                <p class="displayNoneAnnimation onClick">onClick()</p>
-                <p class="displayNoneAnnimation class">class</p>
-                <p class="displayNoneAnnimation map">.map()</p>
-                <p class="displayNoneAnnimation render">render()</p>
-                <p class="displayNoneAnnimation while">while()</p>
-                <p class="displayNoneAnnimation binary01001">01001</p>
-                <p class="displayNoneAnnimation binary00101">00101</p>
-  
-              </div>
-            
-
-
-
+        <!-- <a class="network" target="”_blank”" href="https://www.instagram.com/">
+          <div class="network-icons insta"></div></a> -->
+          <a class="network" target="”_blank”" href="https://www.linkedin.com/in/lucas-hourquin-128969184/">
+            <div class="network-icons linkedin"></div>
+          </a>
+          <!-- <a class="network" target="”_blank”" href="https://www.twitter.com/">
+            <div class="network-icons twitter"></div>
+          </a> -->
+      </div>
+      <a class="arrow" href="#about">
+        <!--img class="arrows " src="./assets/img/icons/button/angle-double-down-solid.svg"-->
+        <span></span>
+        <span></span>
+      </a>
+    </section>
+  </header>
+  <div class="gradient"></div>
+  <main>
+    <section id="about">
+      <div class="about__container">
+        <h3 class="h3-about" data-aos="fade-down">A propos</h3>
+        <div class="about__container__logo--presentation">
+          <div class="about__container__logo " data-aos="zoom-in">
+            <img class="about__container__logo__img-bigbang rotate" src="./assets/img/logo/big-bang.svg">
+            <img class="about__container__logo__img-LH" src="./assets/img/logo/LH-TAG-MOBILE.svg" alt="logo">
+            <div id="about__container__logo-annimation">
+              <p class="displayNoneAnnimation consoleLog">console.log()</p>
+              <p class="displayNoneAnnimation onClick">onClick()</p>
+              <p class="displayNoneAnnimation class">class</p>
+              <p class="displayNoneAnnimation map">.map()</p>
+              <p class="displayNoneAnnimation render">render()</p>
+              <p class="displayNoneAnnimation while">while()</p>
+              <p class="displayNoneAnnimation binary01001">01001</p>
+              <p class="displayNoneAnnimation binary00101">00101</p>
             </div>
-         
-        
-            <p class="about-container__p-presentation">
-              <span class="pro-student">Passionné de développement web</span>, j’ai l'ambition de devenir <span class="JS">Développeur spécialisé en JavaScript - DevOps</span>, ayant un grand intérêt pour les applications web progressive (PWA). Je souhaite travailler avec la technologie <span class="react">React</span> <span class="JS">JS</span> en front-end, <span class="NODE">Node</span> <span class="JS">JS</span> en back-end et acquérir des compétences en web-design. Dans les projets que je mène, j'aime proposer la meilleure expérience aux utilisateurs, j'ai donc hâte de travailler sur de réels projets professionnels et d'obtenir la satisfaction des clients. Curieux, investi et rigoureux, j'aime atteindre des objectifs élevés.
-            </p>
           </div>
-          
+          <p class="about-container__p-presentation">
+            Je suis un développeur déterminé à constamment progresser dans le domaine de la conception logicielle. Avec
+            une expérience dans le <span class="frontend">développement frontend</span>, notamment avec <span
+              class="angular">Angular</span> et <span class="ionic">Ionic</span> pour les applications mobiles, ainsi
+            qu'une connaissance en <span class="backend">développement backend</span> avec <span
+              class="nodejs">Node.js</span> et <span class="express">Express</span>, je suis constamment en quête de
+            nouvelles compétences et de nouveaux défis. Ma curiosité m'a poussé à explorer différents aspects du
+            développement logiciel, et j'ai récemment développé un intérêt particulier pour les bases de données <span
+              class="sql">SQL</span> et les pratiques <span class="devops">DevOps</span>. Je suis convaincu que la
+            maîtrise de ces domaines complémentaires enrichira mes compétences et me permettra de créer des solutions
+            logicielles plus robustes et performantes.
+
+            <!-- Je suis un développeur déterminé à constamment progresser dans le domaine de la conception logicielle. Avec une expérience dans le développement frontend, notamment avec Angular et Ionic pour les applications mobiles, ainsi qu'une connaissance en développement backend avec Node.js et Express, je suis constamment en quête de nouvelles compétences et de nouveaux défis. Ma curiosité m'a poussé à explorer différents aspects du développement logiciel, et j'ai récemment développé un intérêt particulier pour les bases de données SQL et les pratiques DevOps. Je suis convaincu que la maîtrise de ces domaines complémentaires enrichira mes compétences et me permettra de créer des solutions logicielles plus robustes et performantes. -->
+            <!-- <span class="pro-student">Passionné de développement web</span>, j’ai l'ambition de devenir <span
+              class="JS">Développeur spécialisé en JavaScript - DevOps</span>, ayant un grand intérêt pour les
+            applications web progressive (PWA). Je souhaite travailler avec la technologie <span
+              class="react">React</span> <span class="JS">JS</span> en front-end, <span class="NODE">Node</span> <span
+              class="JS"></span> en back-end et acquérir des compétences en web-design. Dans les projets que je mène,
+            j'aime proposer la meilleure expérience aux utilisateurs, j'ai donc hâte de travailler sur de réels projets
+            professionnels et d'obtenir la satisfaction des clients. Curieux, investi et rigoureux, j'aime atteindre des
+            objectifs élevés. -->
+          </p>
         </div>
-          <a class="arrow arrow-project" href="#project">
-            <!--img class="arrows " src="./assets/img/icons/button/angle-double-down-solid.svg"-->
-              <span></span>
-              <span></span>
-  
-          </a>       
-       
-      </section>
-      <section id="project">
-          <h3 class="h3-project">Réalisations</h3>
-          <div class="project__container" >
-            <div class="project__container__card" data-aos="fade-left">
-              <h4  class="project__container__card-name">API pokemons (en cours)</h4>
-              <div  class="project__container__card-techno">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Node.js_logo.svg" alt="Node JS">
-  
-              </div>
-              <img class="project__container__card__img-presentation" src="./assets/img/project/pokemons-api/pikashu.png"/>
-            <button class="project__container__card__btn-infos">En savoir plus</button>
-            </div>
-            <div class="project__container__card" data-aos="fade-up">
-              <h4  class="project__container__card-name">Job Static Listings</h4>
-              <div  class="project__container__card-techno">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/styled-components-1.svg" alt="HTML5 CSS3"/>
-  
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/react-logo.svg" alt="HTML5 CSS3"/>
-  
-              </div>
-  
-              
-              <img class="project__container__card__img-presentation" src="./assets/img/project/frontendmentor/job-listings/desktop-job-listings.jpg"/>
-              <button class="project__container__card__btn-infos">En savoir plus</button>
-  
-            </div>
-            <div class="project__container__card" data-aos="fade-right">
-              <h4  class="project__container__card-name">Scrape Masjid</h4>
-              <div  class="project__container__card-techno">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/HTML5_Badge.svg" alt="HTML5 CSS3"/>
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Node.js_logo.svg" alt="Node JS">  
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/>
-  
-              </div>
-              <img class="project__container__card__img-presentation" src="./assets/img/project/scrape-masjid/scrapeData.jpeg"/>
-              <button class="project__container__card__btn-infos">En savoir plus</button>
-  
-            </div>
-          </div>
-          <div class="project__container" >
-            <div class="project__container__card" data-aos="fade-left">
-              <h4  class="project__container__card-name">React Prayer Times</h4>
-              <div  class="project__container__card-techno">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/react-logo.svg" alt="React JS">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Sass_Logo_Color.svg" alt="Sass">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="HTML5 CSS3"/>
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/CSS3_logo.svg" alt="HTML5 CSS3"/>
-  
-              </div>
-              <img class="project__container__card__img-presentation" src="./assets/img/project/react-prayer-times/rpt-192.svg"/>
-            <button class="project__container__card__btn-infos">En savoir plus</button>
-            </div>
-            <div class="project__container__card" data-aos="fade-up">
-              <h4  class="project__container__card-name">Advice Generator App</h4>
-              <div  class="project__container__card-techno">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/HTML5_Badge.svg" alt="HTML5 CSS3"/>
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/CSS3_logo.svg" alt="HTML5 CSS3"/>
-  
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="HTML5 CSS3"/>
-  
-              </div>
-  
-              
-              <img class="project__container__card__img-presentation" src="./assets/img/project/frontendmentor/advice-app-generator/generator-desktop-preview.jpg"/>
-              <button class="project__container__card__btn-infos">En savoir plus</button>
-  
-            </div>
-            <div class="project__container__card" data-aos="fade-right">
-              <h4  class="project__container__card-name">Interactive Rating Component</h4>
-              <div  class="project__container__card-techno">
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/HTML5_Badge.svg" alt="HTML5 CSS3"/>
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/CSS3_logo.svg" alt="HTML5 CSS3"/>
-  
-                <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="HTML5 CSS3"/>
-  
-              </div>
-              <img class="project__container__card__img-presentation" src="./assets/img/project/frontendmentor/rating-component/interactive-rating-desktop-preview.jpg"/>
-              <button class="project__container__card__btn-infos">En savoir plus</button>
-  
-            </div>
-          </div>
+      </div>
+      <a class="arrow arrow-project" href="#project">
+        <!--img class="arrows " src="./assets/img/icons/button/angle-double-down-solid.svg"-->
+        <span></span>
+        <span></span>
+      </a>
+    </section>
+    <section id="project">
+      <h3 class="h3-project">Réalisations</h3>
+      <project-component data-aos="flip-up" class="project__container"></project-component>
+    </section>
+  </main>
+  <script type="module" src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 
-          <div class="project__container" >
-            <div class="project__container__card" data-aos="fade-left">
-                <h4  class="project__container__card-name">Christopher Benoit</h4>
-                <div  class="project__container__card-techno">
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/HTML5_Badge.svg" alt="HTML5"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/CSS3_logo.svg" alt="CSS3"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Sass_Logo_Color.svg" alt="Sass"/>
-    
-                </div>
-                <img class="project__container__card__img-presentation" src="./assets/img/project/christopher-benoit/christopher-benoit-logo.png"/>
-                <button class="project__container__card__btn-infos">En savoir plus</button>
-    
-              </div>
-              <div class="project__container__card" data-aos="fade-down">
-                <h4  class="project__container__card-name">Foodrum</h4>
-                <div  class="project__container__card-techno">
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/HTML5_Badge.svg" alt="HTML5"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/CSS3_logo.svg" alt="CSS3"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/bootstrap-original-logo.svg" alt="Bootstrap"/>
-    
-                </div>
-                <img class="project__container__card__img-presentation" src="./assets/img/project/foodrum/foodrum.JPG"/>
-                <button class="project__container__card__btn-infos">En savoir plus</button>
-    
-              </div>
-              <div class="project__container__card" data-aos="fade-right">
-                <h4  class="project__container__card-name">Laurent Ehrlich</h4>
-                <div  class="project__container__card-techno">
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/HTML5_Badge.svg" alt="HTML5"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/CSS3_logo.svg" alt="CSS3"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg" alt="JavaScript"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/bootstrap-original-logo.svg" alt="Bootstrap"/>
-                  <img class="project__container__card-techno__logo" src="./assets/img/icons/techno/Sass_Logo_Color.svg" alt="Sass">
-  
-    
-                </div>
-                <img class="project__container__card__img-presentation" src="./assets/img/project/laurent-ehrlich/laurent-logo.png"/>
-                <button class="project__container__card__btn-infos">En savoir plus</button>
-    
-              </div>
-            </div>
-            
-          
-        
-      
-      
-            </section>
-    </main>
-    <script src="./index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
 </html>

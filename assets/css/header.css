@@ -41,6 +41,8 @@ header {
   height: 89px;
   -webkit-box-shadow: 1px 0px 17px 2px rgba(49, 50, 52, 0.82);
   box-shadow: 1px 0px 17px 2px rgba(49, 50, 52, 0.82);
+  box-shadow: 1px 0px 17px 2px rgba(91, 86, 44, 0.66);
+  -webkit-box-shadow: 1px 0px 17px 2px rgba(91, 86, 44, 0.66);
   z-index: 1;
 }
 .header__nav__ul {
@@ -243,9 +245,10 @@ header {
   --start-angle-of-rotation: 0deg;
   --end-angle-of-rotation: -360deg;
   /* background-image: url(./../img/photo/photo-de-cv.jpg); */
-  /* background-image: url(./../img/photo/pdp-cv.svg); */
+  /* background-image: url(./../img/photo/pdp-cv.jpg); */
 
   background-size: cover;
+  box-shadow: rgba(119, 113, 113, 0.37) 0px 5px 15px;
 }
 
 @keyframes rotate-opposite {
