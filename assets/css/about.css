@@ -136,6 +136,9 @@
   width: 600px;
   font-size: 25px;
   align-self: center;
+  text-align: justify;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .pro-student {
   color: #61dafb;
@@ -152,12 +155,24 @@
 .NODE{
   color : #70C552;
 }
+.frontend { color: #ffcc00; } /* Jaune pour le Frontend */
+.angular { color: #dd0031; } /* Rouge pour Angular */
+.ionic { color: #3880ff; } /* Bleu pour Ionic */
+.backend { color: #36bba5; } /* Vert foncé pour le Backend */
+.nodejs { color: #68A063; } /* Vert pour Node.js */
+.express { color: #967bbf; } /* Noir pour Express */
+.sql { color: #f29111; } /* Orange pour SQL */
+.devops { color: #ff7b72; } /* Saumon pour DevOps */
+
 /* tablet device */
 @media (max-width: 990px) {
   /** about **/
   .about-container__p-presentation {
     width: 400px;
     font-size: 22px;
+    text-align: justify;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   }
   .about__container__logo__img-bigbang,
   .about__container__logo__img-LH {
@@ -245,5 +260,8 @@
     font-size: 18px;
     width: 80%;
     margin: auto;
+    text-align: justify;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   }
 }

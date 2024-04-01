@@ -33,6 +33,7 @@
   text-align: center;
   border-radius: 9px;
   margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .project__container__card-techno {
   display: flex;

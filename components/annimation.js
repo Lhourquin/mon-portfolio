@@ -16,7 +16,7 @@ circleContainer.forEach(circle => {
   circle.style.setProperty("--end-angle-of-rotation", `${finalAngle}deg`);
 
 
-  angle += 90;
+  angle += 180;
 
 });
 

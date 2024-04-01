@@ -12,8 +12,8 @@ html {
   letter-spacing: 0.2px;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  /* font-family: "Vesper Libre", serif; */
-  font-family: "Inter", sans-serif;
+  font-family: "Vesper Libre", serif;
+  /* font-family: "Inter", sans-serif; */
   /* font-family: 'Ubuntu', serif; */
   /* font-family: Roboto sans-serif; */
   scroll-behavior: smooth;
@@ -366,6 +366,6 @@ template {
 }
 
 body {
-  background-color: #282c34;
+  background-color: #20232a;
   color: whitesmoke;
 }
