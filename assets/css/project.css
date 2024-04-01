@@ -33,6 +33,7 @@
   text-align: center;
   border-radius: 9px;
   margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .project__container__card-techno {
   display: flex;
@@ -60,6 +61,7 @@
   border-radius: 9px;
   background-color: #61dafb;
   color: #282c34;
+  cursor: pointer;
 }
 
 .project__container__card__btn-infos:hover {
@@ -85,4 +87,16 @@
   .h3-project {
     font-size: 30px;
   }
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*2);
+  animation: preloader .9s ease-in-out alternate infinite;
+}
+
+
+@keyframes preloader {
+  100% { transform: scale(1.2); }
 }
