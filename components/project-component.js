@@ -1,3 +1,4 @@
+import './../assets/data'
 export class ProjectComponent extends HTMLElement {
 
 
@@ -15,7 +16,7 @@ export class ProjectComponent extends HTMLElement {
     }
 
     getInfos() {
-        fetch('./../../data/infos.json')
+        fetch('./../assets/data/infos.json')
             .then((res) => res.json())
             .then((data) => {
                 this.infos = data.data;
@@ -54,7 +55,7 @@ export class ProjectComponent extends HTMLElement {
         this.shadowRoot.addEventListener("click", (e) => {
             if (e.target.id.includes('project_id-')) {
                 const id = e.target.id;
-                fetch('./../../data/explanation.json')
+                fetch('./../assets/data/explanation.json')
                     .then((res) => res.json())
                     .then((explanations) => {
                         const explanationsResult = explanations.data.find((obj) => obj.id == id);
