@@ -1,26 +1,6 @@
 {
     "data": [
         {
-            "id": 1,
-            "fade":"fade-left",
-            "projectName": "React Prayer Times",
-            "img": "./assets/img/project/react-prayer-times/rpt-192.svg",
-            "technoLogos": [
-                {
-                    "name": "React Js",
-                    "src": "./assets/img/icons/techno/react-logo.svg"
-                },
-                {
-                    "name": "Sass",
-                    "src": "./assets/img/icons/techno/Sass_Logo_Color.svg"
-                },
-                {
-                    "name": "Javascript",
-                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
-                }
-            ]
-        },
-        {
             "id": 2,
             "fade": "fade-up",
             "projectName": "Scrap Masjid",
@@ -165,6 +145,47 @@
                 {
                     "name": "Javascript",
                     "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "fade":"fade-left",
+            "projectName": "React Prayer Times",
+            "img": "./assets/img/project/react-prayer-times/rpt-192.svg",
+            "technoLogos": [
+                {
+                    "name": "React Js",
+                    "src": "./assets/img/icons/techno/react-logo.svg"
+                },
+                {
+                    "name": "Sass",
+                    "src": "./assets/img/icons/techno/Sass_Logo_Color.svg"
+                },
+                {
+                    "name": "Javascript",
+                    "src": "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "isNew":true,
+            "fade": "fade-up",
+            "projectName": "Training Book",
+            "img": "./assets/img/project/training-book/training-book-logo.jpg",
+            "technoLogos": [
+                {
+                    "name": "Node Js",
+                    "src": "./assets/img/icons/techno/Node.js_logo.svg"
+                },
+                {
+                    "name": "Ionic",
+                    "src": "./assets/img/icons/techno/IONIC.svg"
+                },
+                {
+                    "name" : "Angular",
+                    "src": "./assets/img/icons/techno/angular.svg"
                 }
             ]
         }

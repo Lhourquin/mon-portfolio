@@ -176,14 +176,17 @@
             "outils": "GIT, VS code"
         },
         {
-            "name": "API pokemons (en cours)",
-            "image": "./assets/img/project/pokemons-api/pikashu.png",
+            "id" : "project_id-9",
+            "name": "Training Book (en cours)",
+            "image": "./assets/img/project/training-book/training-book-logo.jpg",
             "technos": [
-                "./assets/img/icons/techno/Node.js_logo.svg"
+                "./assets/img/icons/techno/Node.js_logo.svg",
+                "./assets/img/icons/techno/Unofficial_JavaScript_logo_2.svg",
+                "./assets/img/icons/techno/angular.svg",
+                "./assets/img/icons/techno/IONIC.svg"
             ],
-            "ghLink": "https://github.com/Lhourquin/Node-JS-API-Rest-Pokemons",
-            "objectif": "objectif de ce projet : Réaliser une API Rest avec Node JS.",
-            "outils": "Terminal, GIT, VS code, Insomnia"
+            "description" : "Training Book est une application mobile innovante dédiée aux passionnés de musculation à la recherche d'une expérience d'entraînement sur mesure. Elle permet à chaque utilisateur de créer, modifier et personnaliser entièrement son programme d'entraînement pour qu'il réponde parfaitement à ses objectifs personnels, préférences, et niveau de performance. "
+            
         }
     ]
 }

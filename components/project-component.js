@@ -25,12 +25,13 @@ export class ProjectComponent extends HTMLElement {
     }
 
     render() {
-        const infos = this.infos;
+        const infos = this.infos.reverse();
         const style = `@import './../assets/css/project.css';`;
         const cardHTML = infos.map(
             info => `
             <style>${style}</style>
                 <div class="project__container__card" data-aos="${info.fade}">
+                ${info.isNew ? '<div class="loader__element">En cours</div>':''}
                     <h4 class="project__container__card-name">${info.projectName}</h4>
                     <div class="project__container__card-techno">
                     ${info.technoLogos.map(technoLogo => `
