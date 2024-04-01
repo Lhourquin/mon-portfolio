@@ -26,7 +26,7 @@ export class ProjectComponent extends HTMLElement {
 
     render() {
         const infos = this.infos.reverse();
-        const style = `@import './../assets/css/project.css';`;
+        const style = `@import './assets/css/project.css';`;
         const cardHTML = infos.map(
             info => `
             <style>${style}</style>
